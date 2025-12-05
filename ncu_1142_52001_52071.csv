@@ -1,0 +1,1382 @@
+﻿serial_no,semester,department,course_code,name_zh,name_en,instructor,edu_system,credit,teaching_goal,teaching_content,textbooks,self_compiled_ratio,instruction_way,grading,office_hour,teaching_weeks,flex_learning,course_domain
+52001,1142,Department of Computer Science and Elec. Engineering,CE1002-*,計算機概論 Ⅱ,Introduction to Computer Science Ⅱ,"Shih, Timothy K.",Undergraduate Programme,3,"This course will be presented in English (1/3) and Mandarin (2/3).
+If you want to add this course, please come to the class on the first day. Please do not send email to me.
+
+""This Semester: This course introduces fundamental concepts of Computer Science/Engineering. In addition, the class will discuss basic programming skills. Python and C++ language will be taught. The following outline is from the main textbook. This course outline could be changed if time is not allowed to complete all lectures. Additional lectures for term projects and assignments could be added to the outline.
+
+Winter Break: You need to study a part of Java Programming
+
+Next Semester (Introduction to Computer Science II): Finishing C++ programming, Java Programming""","""In each week, the class will discuss fundamental CS concepts for one hour, plus programming skills for two hours. The lab experiment class (i.e., Introduction to Computer Science Lab I and II) will discuss skills to complete assignments and projects. Lectures are given in English and Mandarin.
+The following outline for Computer Science Fundamentals is for both Introduction to Computer Science Ⅰand II (which will be taught in the Spring semester):
+1. Introduction
+2. Number System
+3. Data Storage
+4. Operation on Data
+5. Computer Organization
+6. Computer Networks
+7. Operating Systems
+8. Algorithms
+9. Programming Languages
+10. Software Engineering
+11. Data Structure
+12. Abstract Data Type
+13. File Structure
+14. Databases
+15. Data Compression
+16. Security
+17. Theory of Computation
+18. Artificial Intelligent
+Four Class Modules for Programming
+Module I: Practice of Python Programming
+Module II: Foundation of Structured Programming (C and C++)
+Module III: Foundation of Object-Oriented Programming (C++ and Java)
+Module IV: Window Programming and Term Project
+Python Programming – ? First Semester
+? Ch1: Beginnings
+? Ch2: Control
+? Ch3: Algorithms and Program Development
+? Ch4: Working with Strings
+? Ch5: Functions-QuickStart
+? Ch6: Files and Exceptions I
+? Ch7: Lists and Tuples
+? Ch8: More on Functions
+C/C++ Programming – ? First Semester and ? Second Semester
+? Chapter 2: Introduction to C++ Programming
+? Chapter 3: Introduction to Classes and Objects
+? Chapter 4,5: Control Statements
+? Chapter 6: Functions and an Introduction to Recursion
+? Chapter 7: Arrays and Vectors
+? Chapter 8: Pointers
+(Winter Break)
+? Chapter 9, 10: Classes
+? Chapter 11: Operator Overloading
+? Chapter 12: Inheritance
+? Chapter 15: Stream Input/Output
+? Chapter 16: Exception Handling
+Java Programming – ? Second Semester
+Part I: Fundamentals of Programming (Ch. 1 – 8)
+Home Work during Winter Break
+Part II: Object-Oriented Programming
+? Chapter 9 Objects and Classes
+? Chapter 10 Thinking in Objects
+? Chapter 11 Inheritance and Polymorphism
+? Chapter 12 Exception Handling and Text I/O
+? Chapter 13 Abstract Classes and Interfaces
+? Chapter 17 Binary I/O
+Part III: GUI Programming
+? Chapter 14 JavaFX Basics
+? Chapter 15 Event-Driven Programming and Animations
+? Chapter 16 JavaFX Controls and Multimedia
+Part IV: Data Structures and Algorithms
+? Optional""
+1. All students need to wear a mask when we have face-to-face class (for lab class).
+2. 1/3 of class will be presented in English (i.e., Intro to CS lectures)
+3. 2/3 of class will be presented in Chinese (i.e., programming class).","""1.""""Foundations of Computer Science,” 4th Edition, Behrouz Forouzan and Firouz Mosharraf, Thomson – for One Year
+2.“The practice of Computing Using Python,” 3rd Edition, Punch and Enbody, ? First Semester
+3.""""C++ How to Program (Late Objects Version)"""", 7th Edition, Deitel and Deitel, Prentice Hall – ? First Semester, and ? Next Semester
+4.“Introduction to Java Programming,” 10th Edition (Global Edition) by Y. Daniel Liang – ? Second Semester""",40,"Lecture
+		
+		Practical Training Lab","Midterm – 25%
+Final – 25%
+Assignments – 50%","""Monday 1PM - 4PM, Thursday 10AM - Noon""",16,Reading assignments will be provided. The topic will include basic reading of Artificial Intelligence.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52002,1142,Department of Computer Science and Elec. Engineering,CE1004-A,計算機實習 Ⅱ,Introduction to Computer Science ⅡLab,"Shih, Timothy K.",Undergraduate Programme,1,"""Objective: This course introduces fundamental concepts of Computer Science/Engineering. In addition, the class will discuss basic programming skills. C and/or C++ language will be taught. The following outline is from the main textbook. This course outline could be changed if time is not allowed to complete all lectures. Additional lectures for term projects and assignments could be added to the outline. 
+
+In each week, the class will discuss fundamental concepts for one hour, plus programming skills for two hours. The lab experiment class (i.e., Introduction to Computer Science LabⅠ) will discuss skills to complete assignments and projects.""","C/C++ Programming
+Chapter 2: Introduction to C++ Programming
+Chapter 3: Introduction to Classes and Objects
+Chapter 4,5: Control Statements
+Chapter 6: Functions and an Introduction to Recursion
+Chapter 7: Arrays and Vectors
+Chapter 8: Pointers
+Chapter 9, 10: Classes
+Chapter 11: Operator Overloading
+Chapter 12: Inheritance
+Chapter 15: Stream Input/Output
+Chapter 16: Exception Handling
+Python Programming Basic
+Ch1: Beginnings
+Ch2: Control
+Ch3: Algorithms and Program Development
+Ch4: Working with Strings
+Ch5: Functions-QuickStart
+Ch6: Files and Exceptions I
+Ch7: Lists and Tuples
+Ch8: More on Functions","“The practice of Computing Using Python,” 3rd Edition, Punch and Enbody, ½ First Semester
+""C++ How to Program (Late Objects Version)"", 7th Edition, Deitel and Deitel, Prentice Hall – ½ First Semester, and ½ Next Semester
+“Introduction to Java Programming,” 10th Edition (Global Edition) by Y. Daniel Liang – ½ Second Semester",40,"Lecture
+		Seminar
+		Practical Training Lab
+		Individual Instruction","Midterm – 25%
+Final – 25%
+Assignments – 50%","""Monday 1PM - 4PM, Thursday 10AM - Noon""",16,Reading assignments will be provided. The topic will include basic reading of Artificial Intelligence.,人工智慧、資料科學與多媒體研究群
+52003,1142,Department of Computer Science and Elec. Engineering,CE1004-B,計算機實習 Ⅱ,Introduction to Computer Science ⅡLab,"Shih, Timothy K.",Undergraduate Programme,1,"""Objective: This course introduces fundamental concepts of Computer Science/Engineering. In addition, the class will discuss basic programming skills. C and/or C++ language will be taught. The following outline is from the main textbook. This course outline could be changed if time is not allowed to complete all lectures. Additional lectures for term projects and assignments could be added to the outline. 
+
+In each week, the class will discuss fundamental concepts for one hour, plus programming skills for two hours. The lab experiment class (i.e., Introduction to Computer Science LabⅠ) will discuss skills to complete assignments and projects.""","C/C++ Programming
+Chapter 2: Introduction to C++ Programming
+Chapter 3: Introduction to Classes and Objects
+Chapter 4,5: Control Statements
+Chapter 6: Functions and an Introduction to Recursion
+Chapter 7: Arrays and Vectors
+Chapter 8: Pointers
+Chapter 9, 10: Classes
+Chapter 11: Operator Overloading
+Chapter 12: Inheritance
+Chapter 15: Stream Input/Output
+Chapter 16: Exception Handling
+Python Programming Basic
+Ch1: Beginnings
+Ch2: Control
+Ch3: Algorithms and Program Development
+Ch4: Working with Strings
+Ch5: Functions-QuickStart
+Ch6: Files and Exceptions I
+Ch7: Lists and Tuples
+Ch8: More on Functions","“The practice of Computing Using Python,” 3rd Edition, Punch and Enbody, ½ First Semester
+""C++ How to Program (Late Objects Version)"", 7th Edition, Deitel and Deitel, Prentice Hall – ½ First Semester, and ½ Next Semester
+“Introduction to Java Programming,” 10th Edition (Global Edition) by Y. Daniel Liang – ½ Second Semester",40,"Lecture
+		Seminar
+		Practical Training Lab
+		Individual Instruction","Midterm – 25%
+Final – 25%
+Assignments – 50%","""Monday 1PM - 4PM, Thursday 10AM - Noon""",16,Reading assignments will be provided. The topic will include basic reading of Artificial Intelligence.,人工智慧、資料科學與多媒體研究群
+52004,1142,Department of Computer Science and Elec. Engineering,CE1006-A,工程數學,Engineering Mathematics,"Wang, Jia-Ching",Undergraduate Programme,3,Studying differential equations,"“1. First-Order Differential Equations
+2. Second-Order Differential Equations
+3. The Laplace Transform
+4. Series Solutions of Differential Equations, Special Functions
+5. Systems of Differential Equations
+6. Fourier Analysis“","“Erwin Kreyszig, Advanced Engineering Mathematics, 10 th Edition“",0,Lecture,"Exam: 90％
+Practice Course: 10％",Wednesday  3:00pm ~ 5:00pm,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52005,1142,Department of Computer Science and Elec. Engineering,CE1006-B,工程數學,Engineering Mathematics,"Su, Po-Chyi",Undergraduate Programme,3,Studying differential equations,"“1. First-Order Differential Equations
+2. Second-Order Differential Equations
+3. The Laplace Transform
+4. Series Solutions of Differential Equations, Special Functions
+5. Systems of Differential Equations
+6. Fourier Analysis“","“Erwin Kreyszig, Advanced Engineering Mathematics Abridged Version, 10th Edition Update (Taiwan Custom Version), John Wiley ＆ Sons, Inc., 2018.“",0,Lecture,"Midterm 1 25％
+Midterm 2 25％
+Final 25％
+Homework and participation 25％",Wed 14:00-16:00 or by appointment,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52006,1142,Department of Computer Science and Elec. Engineering,CE2004-A,程式語言,Principles of Programming Languages,"Hsu, Fu-Hau",Undergraduate Programme,3,To understand the operation principles of various programming languages.,"“1)   Preliminaries
+2)   Describing Syntax and Semantics
+3)   Lexical and Syntax Analysis
+4)   Names, Bindings, Type Checking, and Scopes
+5)   Data Types
+6)   Expressions and Assignment Statements
+7)   Statement-Level Control Structures
+9)   Subprogram
+10) Implementing Subprograms
+11) Abstract Data Types and Encapsulation Constructs
+12) Support for Object-Oriented Programming“","“Title:          Concepts of Programming Languages, 11th Edition
+Publisher:  Addison Wesley
+Author(s):  Robert W. Sebesta“",40%,Lecture,"Assignments : 25％
+Midterm        : 30％
+Final              : 40％
+Attendance   : 5％",appointment,16,Adjust according to the progress of the lectures.,"資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52007,1142,Department of Computer Science and Elec. Engineering,CE2004-B,程式語言,Principles of Programming Languages,"Zhuang, Yung-Yu
+Liu, Chen-Chung",Undergraduate Programme,3,Developing students‘ conceptual understanding and practical skills in programming languages,"Syllabus
+Chapter 1 Preliminaries
+Chapter 3 Describing syntax and semantics
+Chapter 3 Describing syntax and semantics
+Chapter 5 Names, Binding and Scopes
+Chapter 5 Names, Binding and Scopes,
+Chapter 6 Data types
+Chapter 7 Expressions and assignment statements
+Software architecture and AI-assisted programming
+Chapter 8 Statement-level control structures
+Chapter 9 Subprograms
+Chapter 11 Abstract data types and encapsulation constructs
+Chapter 12 Supports for object-oriented programs
+Chapter 13 Concurrency
+Chapter 14 Exception handling and event handling","CONCEPTS OF PROGRAMMING LANGUAGES 11/E (GE)
+by Robert Sebesta",60,Lecture,Mid-term exam 30％ Final exam: 30％ Group assignment: 30％ Participation: 10％,Tue 09:00-12:00,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52008,1142,Department of Computer Science and Elec. Engineering,CE2008-*,數位系統導論,Digital Design,"Chen, Ching-Han",Undergraduate Programme,3,"1.Understand the basic concept of digital logic
+2. Familiar with a variety of logic gates
+3. Familiar with the combinational logic and sequential logic design and application
+4. Cultivate students the basis capabilities to design the digital logic circuit","1：Introduction to Digital Systems
+2：Binary Logic and Gates
+3：Circuit Optimization
+(test1)
+4：Combinational Logic Design
+5：Decoders/Multiplexers Design
+6：Arithmetic Circuit
+(test 2)
+7：VHDL
+8：VHDL Combinational Circuit Design
+9：Midterm Exam
+10：Sequential Circuits
+11：Sequential Circuit Design
+12：State Machine Design
+(test3)
+13：VHDL Sequential Circuit Design
+14：GRAFCET discrete-event system modeling
+15：GRAFCET hardware synthesis
+第16週：期末考",Mano and Kime : Logic and Computer Design Fundamentals,0,Lecture,average(mid+final exam)*60％ + average(3 test)*40％,Tuesday10:00~12:00,16,According to the explanation provided by the instructor during class.,資安、網路、資料庫與系統研究群
+52009,1142,Department of Computer Science and Elec. Engineering,CE2009-*,電子電路學,Electronic Circuits,"Ren, Hsuan",Undergraduate Programme,3,"1. Domain Knowledge and Professional Skill
+2. Group experiment for Implementation, Communication and Cooperation
+3. Problem Discovery and Solving","“1. DC Circuit:
+(a) Resistor, Ohm‘s Law
+(b) Series Circuits (Kirchhoff‘s Voltage Law)
+(c) Parallel Circuits (Kirchhoff‘s Current Law)
+(d) Series-Parallel Circuits (Wheatstone Bridge, Thevenin‘s Theorem)
+2. AC Circuit:
+RC circuit, RL circuit, RLC circuit
+3. Semiconductor
+Diode, Transistors, Op-Amp“","Electronics Fundamentals: Circuits, Devices, and Applications, 8th edition. By Thomas L. Floyd",40,"Lecture
+		
+		Practical Training Lab","Homework 30％, Lab report 30％, Midterm and Final Exams 40％","Tuesday, Thursday 12:00-13:00 or by appointment",16,According to the explanation provided by the instructor during class.,資安、網路、資料庫與系統研究群
+52010,1142,Department of Computer Science and Elec. Engineering,CE2010-A,數位系統實驗,Experiment of Digital Design,"Chen, Ching-Han",Undergraduate Programme,1,"1.Understand the basic concept of digital logic
+2. Familiar with a variety of logic gates
+3. Familiar with the combinational logic and sequential logic design and application
+4. Cultivate students the basis capabilities to design the digital logic circuit","1. Experiment environment introduction
+2. Combinational Logic Circuits experiment
+3. Combinational Logic Circuits experiment
+4：Combinational Logic Design experiment
+5：Combinational Logic Design experiment
+6：Arithmetic Functions and HDL  experiment
+7：Arithmetic Functions and HDL  experiment
+8：Sequential Circuits experiment
+9 : Sequential Circuits  experiment
+10：Selected Design Topics
+11：Registers and Register Transfers  experiment
+12：Registers and Register Transfers  experiment
+13：Memory Basic experiment
+14 : Computer Design experiment
+15 : Computer Design experiment",Mano and Kime : Logic and Computer Design Fundamentals,0,Practical Training Lab,Grading 100％=works 40％+mid-exam30％+final-exam30％,Wednesday 10:00~12:00,16,According to the explanation provided by the instructor during class.,資安、網路、資料庫與系統研究群
+52011,1142,Department of Computer Science and Elec. Engineering,CE2010-B,數位系統實驗,Experiment of Digital Design,"Chen, Ching-Han",Undergraduate Programme,1,"1.Understand the basic concept of digital logic
+2. Familiar with a variety of logic gates
+3. Familiar with the combinational logic and sequential logic design and application
+4. Cultivate students the basis capabilities to design the digital logic circuit","1. Experiment environment introduction
+2. Combinational Logic Circuits experiment
+3. Combinational Logic Circuits experiment
+4：Combinational Logic Design experiment
+5：Combinational Logic Design experiment
+6：Arithmetic Functions and HDL  experiment
+7：Arithmetic Functions and HDL  experiment
+8：Sequential Circuits experiment
+9 : Sequential Circuits  experiment
+10：Selected Design Topics
+11：Registers and Register Transfers  experiment
+12：Registers and Register Transfers  experiment
+13：Memory Basic experiment
+14 : Computer Design experiment
+15 : Computer Design experiment",Mano and Kime : Logic and Computer Design Fundamentals,0,Practical Training Lab,Grading 100％=works 40％+mid-exam30％+final-exam30％,Wednesday 10:00~12:00,16,According to the explanation provided by the instructor during class.,資安、網路、資料庫與系統研究群
+52012,1142,Department of Computer Science and Elec. Engineering,CE2036-*,資訊與社會服務Ⅱ,Informatics and social service  Ⅱ,"TSAI, TZONG-HAN",Undergraduate Programme,3,,,,,Lecture,,,16,According to the explanation provided by the instructor during class.,
+52013,1142,Department of Computer Science and Elec. Engineering,CE3001-*,計算機組織,Computer Organization,"Chen, Hung-Hsuan",Undergraduate Programme,3,"This course covers the essentials of computer architecture, including performance evaluation, instruction set design, digital logic, and datapath implementation. It aims to develop students' logic and design capabilities while ensuring a clear understanding of computer organization. This prepares students for advanced coursework in computer architecture and related fields.","Evaluating the performance of a system
+Capabilities of the main components of a CPU and a memory system
+How the main components are inter-connected
+Information flow between the components
+How to control the information flow
+Emerging memory architecture
+Design principles of an elegant system",Computer Organization and Design: The Hardware/Software Interface,10,Lecture,"Exams: 50％ (midterm: 25％, final: 25％) Exercise: 30％ Project: 20％",After class or by appointment,16,According to the explanation provided by the instructor during class.,"資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52014,1142,Department of Computer Science and Elec. Engineering,CE3002-A,作業系統,Operating System,Chen Tseng-Yi,Undergraduate Programme,3,,,,0,,,,16,According to the explanation provided by the instructor during class.,
+52015,1142,Department of Computer Science and Elec. Engineering,CE3002-B,作業系統,Operating System,"Chou, Li-Der",Undergraduate Programme,3,"“The design of this course allows students to discuss with their supervisors some specific topics that interest them. The students have to read papers regarding the topic to build their knowledge and learn the research method and methodologies for general problem solving. Meanwhile, this course may include system implementation to enhance students‘ programming skills.“","“1 Introduction
+2 Operating System Structures
+3 Processes
+4 Threads and Concurrency
+5 CPU Scheduling
+6 Synchronization Tools
+7 Synchronization Examples
+8 Deadlocks
+9 Main Memory
+10 Virtual Memory
+11 Mass Storage Structure
+12 I/O Systems
+13 File System Interface
+14 File System Implementation
+15 File System Internals
+16 Security
+17 Protection
+18 Virtual Machines
+19 Networks and Distributed Systems
+20 Case studies“",conference or journal papers regarding the studied toipcs.,0,"Lecture
+		
+		Practical Training Lab
+		Individual Instruction","Attendance: 10~15％
+Midterm-Exam: 25~30％
+Final-Exam: 30~35％
+Homework: 20~35％",自行約,16,According to the explanation provided by the instructor during class.,資安、網路、資料庫與系統研究群
+52016,1142,Department of Computer Science and Elec. Engineering,CE3005-A,演算法,Algorithmics,"Sun, Min-Te(Peter)",Undergraduate Programme,3,"This course provides an introduction to mathematical modeling of computational problems. It covers the common algorithms, algorithmic paradigms, and data structures used to solve these problems. The course emphasizes the relationship between algorithms and programming, and introduces basic performance measures and analysis techniques for these problems.","Topics:
+Chapter 1: The Role of Algorithms
+Chapter 3: Characterizing Running Time
+Chapter 4: Divide-and-Conquer
+Chapter 7: Quicksort
+Chapter 8: Linear Time Sorting
+Chapter 9: Order Statistics
+Chapter 11: Hash Tables
+Chapter 12: Binary Search Trees
+Chapter 17: Augmenting Data Structures
+Midterm Exam
+Chapter 16: Amortizing Analysis
+Chapter 14: Dynamic Programming
+Chapter 15: Greedy Algorithms
+Chapter 20: Elementary Graph Algorithms
+Chapter 22: Single-Source Shortest Paths
+Chapter 23: All-Pairs Shortest Paths
+Chapter 24: Maximum Flow
+Chapter 34: NP-Completeness
+Final Exam","Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, Introduction to Algorithms, 4th Ed. The MIT Press
+ISBN-13: ‎ 978-0262046305",0,"Lecture
+		
+		Practical Training Lab","Homework Assignments	20％ (4 assignments, 5％ for each)
+Programming Assignments	20％ (2 projects, 10％ for each)
+Programming Exams	20％ (2 programming exams, 10％ each)
+Midterm Exam	20％
+Final Exam	20％
+Total	100％","M 2:00P – 4:00P, W 4:00P – 5:00P, and others by appointment",16,Programming recitation hours,軟體工程與計算理論研究群
+52017,1142,Department of Computer Science and Elec. Engineering,CE3005-B,演算法,Algorithmics,"Jiang, Jehn-Ruey",Undergraduate Programme,3,"""Let students become familiar with algorithms used in the general software and then understand how they work. Based on these, students will learn some basic skills of algorithm design, analysis and implementation. Moreover, students will know some hard problems they may encounter in algorithm design and some feasible solution methods for the problems.""","1. Fundamentals of algorithms (including the review of sorting and searching algorithms)
+2. Analysis of algorithms.
+3. Divide-and-conquer
+4. Dynamic programming
+5. Greedy approach
+6. tree search and backtracking algorithms
+7. branch and bound algorithms
+8. An introduction to the theory of computation and NP
+9.minimum-cost maximum-flow algorithms
+10.Hungarian algorithm
+11.approximation algorithms
+12.machine learning/deep learning algorithms
+13.quantum algorithms","""Textbooks:
+My Book's Manuscript: book1-7AB.zip
+Introduction to the Design and Analysis of Algorithms -- A strategic approach, R.C.T. Lee et. al., NcGraw Hill
+Thomas Cormen, Charles Leiserson, Ronald Rivest and Clifford Stein, Introduction to Algorithms (3/e), MIT Press, 2009.
+Reference Books:
+物件導向資料結構—使用Java語言, 江振瑞  著, 松崗圖書公司, 2005
+張元翔, 量子電腦與量子計算, 碁峰, 2020.
+陳建宏(譯), 量子計算實戰, 碁峰, 2020.
+The Algorithm Design Manual, Steven S. Skiena, Elsevier.
+中文Java程式設計, 江振瑞  著, 儒林出版社""
+林大貴, TensorFlow + Keras 深度學習人工智慧實務應用, 博碩文化, 2017.
+齊藤康毅, Deep Learning -- 用Python進行深度學習的基礎理論實作, O'REILLY, (吳嘉芳 譯, 碁峰資訊出版), 2017.
+Algorithm Design: Foundations, Analysis, and Internet Examples, Michael T. Goodrich, Roberto Tamassia, Wiley, 2002. (有中譯本)
+Computer Algorithms, Ellis Horowitz et. al., Silicon Press, 2008.
+Algorithms, S. Dasgupta, C. Papadimitriou and U. Vazirani, McGraw Hill, 2008.
+Programming Challenges, Steven S. Skiena and Miguel Revilla, Elsevier, 2003.",50,Lecture,"""Midterm 25%
+Final   30%
+Homework, Quiz and Inclass 45%""",13:00~15:00 Tuesday,16,"Guide students to learn through hands-on, project-based practice.","人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52018,1142,Department of Computer Science and Elec. Engineering,CE3008-*,專題實驗 I,Special Project in Computer Science I,教授群,Undergraduate Programme,2,Special Project in Computer Science,"“Paper Reading
+System Demo
+Group Discussion“",none,100,"Lecture
+		Seminar
+		Practical Training Lab
+		Individual Instruction
+		Others",Project 100％,TBD,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52019,1142,Department of Computer Science and Elec. Engineering,CE3068-*,雲端服務安全,Cloud Service Security,"Wang, Wei-Jen",Undergraduate Programme,3,"The goal of this course is to help students understand the core concept of cloud service security, including implementation, deployment, operating, regulatory, and security issues.","This course will cover the following topics:
+Cloud Service Security Overview, Cloud Data, Cloud Application Security, Cloud Platform Management and Security Concerns, Data Center and Cloud Operations, and Cloud Regulations and Laws.",Handouts,100,"Lecture
+		
+		Practical Training Lab","Midterm Exam: 40％, Final Exam: 40％, Lab: 10％, and Class Participation: 10％",Monday 16:00-17:00,16,The last two weeks of this course will be reserved for group discussions and feedbacks.,資安、網路、資料庫與系統研究群
+52020,1142,Department of Computer Science and Elec. Engineering,CE4001-A,專題實驗II,Special Project in Computer Science II,"Zhuang, Yung-Yu
+Liang, De-Ron
+Shih, Timothy K.
+Cheng, Yung-Pin",Undergraduate Programme,2,Special Project in Computer Science,"“Paper Reading
+System Demo
+Group Discussion“",none,100,"Lecture
+		Seminar
+		Practical Training Lab
+		Individual Instruction
+		Others",Project 100％,TBD,16,According to the explanation provided by the instructor during class.,"資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群"
+52021,1142,Department of Computer Science and Elec. Engineering,CE4001-B,專題實驗II,Special Project in Computer Science II,"Tsai, Meng-Feng
+TSAI, TZONG-HAN
+Chen, Gwo-Dong
+Yang, Stephen J.H.
+Chen, Hung-Hsuan
+Chang, Chia-Hui
+Horng, Jorng-Tzong
+Chung Chia Ru
+Liu, Chen-Chung",Undergraduate Programme,2,Special Project in Computer Science,"“Paper Reading
+System Demo
+Group Discussion“",none,100,"Lecture
+		Seminar
+		Practical Training Lab
+		Individual Instruction
+		Others",Project 100％,TBD,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52022,1142,Department of Computer Science and Elec. Engineering,CE4001-C,專題實驗II,Special Project in Computer Science II,"Chou, Li-Der
+Jiang, Jehn-Ruey
+Chang, Guey-Yun",Undergraduate Programme,2,Special Project in Computer Science,"“Paper Reading
+System Demo
+Group Discussion“",Protocols and Architectures for Wireless Sensor Networks,0,"Seminar
+		
+		Individual Instruction","Thematic work 75％
+Teamwork 15％
+Attendance rate 10％",appointment,16,According to the explanation provided by the instructor during class.,"資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群"
+52023,1142,Department of Computer Science and Elec. Engineering,CE4001-D,專題實驗II,Special Project in Computer Science II,"Cheng, Hsu-Yung
+chia yu,lin
+Wu, Eric Hsiao-Kuang
+Fan, Kuo-Chin
+Su, Po-Chyi",Undergraduate Programme,2,Special Project in Computer Science,"“Paper Reading
+System Demo
+Group Discussion“",NONE,100%,"Seminar
+		
+		Individual Instruction",100％專題作品,appointment,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52024,1142,Department of Computer Science and Elec. Engineering,CE4001-E,專題實驗II,Special Project in Computer Science II,"Wang, Jia-Ching
+Hsu, Fu-Hau
+Su, Mu-Chun
+Chen Tseng-Yi
+Yeh, Shih-Ching
+Chen, Ching-Han",Undergraduate Programme,2,Special Project in Computer Science,"“Paper Reading
+System Demo
+Group Discussion“",none,100,Lecture,Project 100％,TBD,16,adjust according to the progress of the lectures,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52025,1142,Department of Computer Science and Elec. Engineering,CE4001-F,專題實驗II,Special Project in Computer Science II,"Sun, Min-Te(Peter)
+Yang,Hao-Tsung
+Hui-Ju Hung
+Wang, Wei-Jen",Undergraduate Programme,2,Special Project in Computer Science,"“Paper Reading
+System Demo
+Group Discussion“",Selected papers/books,100,"Lecture
+		Seminar
+		
+		Individual Instruction",Individual Performance 100％,Appointments with Professors,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52026,1142,Department of Computer Science and Elec. Engineering,CE4002-*,專題實驗Ⅲ,Special Project in Computer Science Ⅲ,教授群,Undergraduate Programme,2,Special Project in Computer Science,"“Paper Reading
+System Demo
+Group Discussion“",Selected papers/books,100,"Lecture
+		Seminar
+		
+		Individual Instruction",Individual Performance 100％,Appointments with Professors,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52027,1142,Department of Computer Science and Elec. Engineering,CE5033-*,統計方法與資料採礦,Statistical Methods and Data Mining,Chung Chia Ru,Master/Doctoral Programme,3,"1. Proficiency in Statistical Methods: The ability to understand when and how to use specific statistical methods across different situations.
+2. Application of Data Mining Techniques: Gain familiarity with a variety of data mining methods and their practical applications.
+3. Improved Decision-Making Skills: Enhance your ability to select the most effective analysis strategy for given data challenges.
+4. Real-World Readiness: Prepare for real-world data analysis tasks with a strong foundation in both theory and application.","1. Fundamental Statistical Concepts: Explore essential statistical theories, including probability, inference, regression analysis, and hypothesis testing, to understand their application in data analysis.
+2. Data Mining Techniques: Delve into advanced data mining methods, such as clustering, classification, association rules, and neural networks, learning to uncover patterns and insights from large datasets.
+3. R Programming: Gain proficiency in R, from basic data manipulation to advanced data analysis techniques, including the use of popular packages for statistical modeling and data visualization.
+4. Applied Analysis Projects: Engage in hands-on projects that simulate real-world scenarios, applying statistical and data mining techniques to derive actionable insights from datasets.","1. Practical Statistics for Data Scientists: 50 Essential Concepts by Peter Bruce and Andrew Bruce
+2. Data Mining: Concepts and Techniques by Jiawei Han, Micheline Kamber, and Jian Pei",70,"Lecture
+		Seminar
+		Practical Training Lab","1.  Class Participation and Group Discussions (20％). 
+2.  Homework (30％). 
+3.  Final Exam (25％). 
+4.  Final Project (25％).","Mon. 10:00-12:00, or by appointment",16,The extra 2 weeks will be used for makeup classes.,人工智慧、資料科學與多媒體研究群
+52028,1142,Department of Computer Science and Elec. Engineering,CE5038-*,資料壓縮,Data Compression,"Su, Po-Chyi",Master/Doctoral Programme,3,Study theoretical and practical knowledge of multimedia data compression and signal processing.,"“1. Introduction: lossless and lossy data compression; modelling and coding; entropy and source coding theorem
+2. Lossless compression
+I. Huffman Coding: uniquely decodable codes; Huffman Codes; dynamic Huffman coding; applications.
+II. Arithmetic Coding: implementation details; adaptive arithmetic coding; applications.
+III. Dictionary Method: static dictionary codes; Lempel-Ziv coding; LZ 77/78 and their variations; implementation and applications.
+3. Lossy compression
+I. Scalar/Vector Quantization Non-uniform quantizer; Lloyd algorithm; LBG Algorithm; tree structure VQ; search methods for nearest neighbor encoding; variations and applications.
+II. Still image compression: JPEG/JPEG2000, EZW, SPIHT
+III. Video compression: MPEG, H.264
+IV. Audio compression: MP3
+“","“1. Thomas M. Cover and Joy A. Thomas, ““Elements of Information Theory,““ 2nd Edition, Wiley-Interscience Publication, John Wiley ＆ Sons, Inc., 2006.
+2. Timothy Bell, John Cleary, Ian Witten, ““Text Compression,““ 1990.
+3. William B. Pennebaker, Joan L. Mitchell, ““JPEG: Still Image Data Compression Standard““, 1992.
+4. Iain E.G. Richardson, ““H.264 and MPEG-4,““ Wiley, 2003.
+5. David Taubman, Michael Marcellin, ““JPEG2000: Image Compression Fundamentals, Standards and Practice““, 2001.
+6. Allen Gersho, R. and Robert M. Gray, ““Vector Quantization and Signal Compression,““ Klumer Acad. Pub. 1992.
+7. David Salomon, ““Handbook of Data Compression,““ 5th Edi. Springer, 2010.
+8. J. Arnold, M. Frater and M. Pickering, ““Digital Television – Technology and Standards,““ Wiley-Interscience Publication, John Wiley ＆ Sons, Inc., 2007.
+“",80,Lecture,"“1. Homework: 40％
+2. Final exam: 30％
+3. Term report 30％
+“",Wed. 13:00~15:00 or by appointment,16,According to the explanation provided by the instructor during class.,人工智慧、資料科學與多媒體研究群
+52029,1142,Department of Computer Science and Elec. Engineering,CE5065-*,使用者界面設計和評鑑,Design and Evaluation of User Interface,"Chen, Sherry Y.",Master/Doctoral Programme,3,To know how to design usable interface and conduct evaluation with scientific criteria.,"Design of Interactive Interface
+Usability of User Interface
+Creditability of User Interface
+Evaluation Methods of User Interface
+Accommodation of Individual Differences
+Customization and Personalization
+Selected Topics",None,100,"Lecture
+		Seminar
+		Practical Training Lab
+		Individual Instruction","Class Participation and Answers to Questions: 40%
+Assignments and Reports: 40%
+Tests: 20%",Wednesday 14:00-15:00,16,"Week 1-Week 16: Lectures
+Week 17 and Week 18: Activities","人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52030,1142,Department of Computer Science and Elec. Engineering,CE5066-*,生物與醫學資訊之資訊探勘,Data mining on biological and andmedical data,"Horng, Jorng-Tzong",Master/Doctoral Programme,3,,,,0,,,0,16,According to the explanation provided by the instructor during class.,
+52031,1142,Department of Computer Science and Elec. Engineering,CE5081-*,學習、合作與創造,"Learning, Collaboration and Creativity","Liu, Chen-Chung",Master/Doctoral Programme,3,"Understanding  cognitive and learning theories related to technology design, and gaining deeper insighs into digital learning and general principles of information design","Introduction to Learning Sciences
+Cognitive Load Theory
+Flow Theory and Computer Games
+Games and Learning
+Constructivism
+Constructionism
+Cognitive Apprenticeship Theory
+Knowledge Building Theory
+Community of Practice Theory
+Collaborative Learning
+Creativity: Cognition and Development
+Interest and Motivation Development
+Motivation and Creativity
+Space and Learning",Key Classic Literature and Recent Research Papers,50%,"Lecture
+		Seminar","In-class participation ＆ responses to question (30％), Presentation (30％), Reading response (40％)",Tue 09:00-12:00,16,According to the explanation provided by the instructor during class.,數位學習研究群
+52032,1142,Department of Computer Science and Elec. Engineering,CE5084-*,影音訊號處理實務,Practice in Video/Audio Signal Processing,"Wang, Jia-Ching",Master/Doctoral Programme,3,,,,0,,,,16,According to the explanation provided by the instructor during class.,
+52033,1142,Department of Computer Science and Elec. Engineering,CE5087-*,科技風險管理,IT Risk Management,"Sun, Min-Te(Peter)
+Lee Yi-Yuan",Master/Doctoral Programme,3,科技風險管理課程的重要性在於幫助組織和個人適應快速科技風險管理課程的重要性在於幫助組織和個人適應快速變化的科技環境，並有效地管理科技相關的風險。首先將會介紹風險管理模型，然後提出其中IT風險管理的幾個面向，跟同學們交流。幾個國際的科技風險要求，以及兩岸金融業的科技風險規範，就是接下來的重點；規範怎麼要求，組織如何落實，監管單位如何查核，組織又如何應對，最後實務上又是怎麼的碰撞，幾個經典的案例希望能協助同學有進一步的思考，裡面涵蓋了對於資安長CISO的要求與考驗，零信任架構近幾年落實在國內外的樣態與案例，金融科技風險要求的實際挑戰與回應，大型集團全面導入ISMS與ITSM的前世與今生，以及最貼近時事的，近幾年協助國內大型組織，處理受駭事件，接任指揮然後協調所有資源，協助客戶逐步恢復正常運作的經驗談。資安的下一步就是科技風險管理，希望能協助同學掌握要點並發揮在未來的工作中。,"每週進度表
+週次	上課日期	課程進度、內容、主題
+1　		課程簡介, IT科技風險概論
+2　		Lecture 1: 風險管理模型介紹
+3　		Lecture 1: 風險管理模型介紹之二
+4　		Lecture 2: 兩岸科技風險規範介紹
+5　		Lecture 2: 兩岸科技風險規範介紹之二
+6　		期末專題提報
+7　		Lecture 3: 國際科技風險要求
+作業一繳交
+8　		Lecture 3: 國際科技風險要求之二
+9　		Lecture 3: 國際科技風險要求之三
+10　		Lecture 4: 科技風險管理案例分享
+作業二繳交
+11　		Lecture 4: 科技風險管理案例分享之二
+12　		Lecture 5: 駭客接戰engage案例分享
+13　		Lecture 5: 駭客接戰engage案例分享之二
+14　		期末專題報告之一
+作業三繳交
+15　		期末專題報告之二
+16　		期末專題報告之三",授課講義、論文及外部資料,100,Lecture,出席10%，習題45%，期末專案報告40%,"Tu 10:00 – 11:00, and others by appointment",16,External Discussion,資安、網路、資料庫與系統研究群
+52034,1142,Department of Computer Science and Elec. Engineering,CE5088-*,深度強化學習,Deep Reinforcement Learning,"Lin,Chien-Chang",Master/Doctoral Programme,3,"This course aims to provide graduate students with a comprehensive understanding of deep reinforcement learning (DRL) — a field that combines reinforcement learning (RL) and deep learning (DL) to enable intelligent agents to learn complex behaviors through interaction with environments.
+By the end of the course, students will be able to:
+1.	Understand the theoretical foundations of reinforcement learning, including Markov decision processes, Bellman equations, policy evaluation, and value iteration.
+2.	Apply deep learning techniques (e.g., convolutional and recurrent neural networks) to approximate value functions and policies.
+3.	Implement and analyze key DRL algorithms such as DQN, DDPG, A3C, PPO, and SAC.
+4.	Experiment with real-world or simulated environments using frameworks such as OpenAI Gym, PyTorch, or TensorFlow.
+5.	Critically evaluate current research papers and identify emerging trends and open challenges in DRL.
+6.	Design and implement a mini-project or research proposal demonstrating the application of DRL to a specific problem domain (e.g., robotics, games, control systems, or autonomous decision-making).","This course provides a rigorous and comprehensive introduction to Deep Reinforcement Learning (DRL) — the interdisciplinary field at the intersection of machine learning, control theory, and artificial intelligence.
+Students will explore how intelligent agents learn to make sequential decisions through interaction with dynamic environments using reward-driven learning frameworks.
+The course covers fundamental topics in reinforcement learning, including Markov decision processes (MDPs), value-based and policy-based methods, temporal-difference learning, and exploration–exploitation trade-offs. Building on these foundations, students will study deep neural architectures that enable DRL agents to operate in high-dimensional, complex environments.
+Through lectures, hands-on coding assignments, and research-oriented projects, students will gain both theoretical understanding and practical implementation skills. Real-world applications — such as robotics, autonomous driving, game playing (e.g., AlphaGo), and resource optimization — will be discussed to illustrate the transformative potential of DRL.","Deep Reinforcement Learning Hands‑On(Maxim Lapan), The 3rd Edition.",30,"Lecture
+		
+		Practical Training Lab","Midterm  40%
+Project presentation  20%
+Final exam  40%",Friday afternoon 4:00pm – 6:00pm (virtual),16,According to the explanation provided by the instructor during class.,人工智慧、資料科學與多媒體研究群
+52035,1142,Department of Computer Science and Elec. Engineering,CE6002-*,書報討論,Seminar,Hui-Ju Hung,Master/Doctoral Programme,0,,,,0,,,,16,According to the explanation provided by the instructor during class.,
+52036,1142,Department of Computer Science and Elec. Engineering,CE6011-*,專題討論,Special Topics in Computer Science,教授群,Master/Doctoral Programme,0,U3BlY2lhbCBQcm9qZWN0IGluIENvbXB1dGVyICBTY2llbmNl,4oCcUGFwZXIgUmVhZGluZwpTeXN0ZW0gRGVtbwpHcm91cCBEaXNjdXNzaW9u4oCc,U2VsZWN0ZWQgcGFwZXJzL2Jvb2tz,0,"Seminar
+		
+		Individual Instruction",100,Appointments with Professors,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52037,1142,Department of Computer Science and Elec. Engineering,CE6012-*,專題討論,Special Topics in Computer Science,教授群,Master/Doctoral Programme,0,Special Project in Computer Scienc,"“Paper Reading
+System Demo
+Group Discussion“",Selected papers/books,100,"Lecture
+		Seminar
+		
+		Individual Instruction",Individual Performance 100％,Appointments with Professors,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52038,1142,Department of Computer Science and Elec. Engineering,CE6032-*,電腦視覺,Computer Vision,"Fan, Kuo-Chin",Master/Doctoral Programme,3,"“Computer vision is the enterprise of automating and integrating a wide range of processes and representations for visual perception [Ballard and Brown 1982]. In this course, we plan to address the theoretic foundations and technical aspects of computer vision. It will cover branches of many different disciplines and has applications across the whole spectrum of science, art and humanities.
+The following issues will be introduced in this course.
+?Applications of computer vision
+?History of computer vision
+?2D Shape description and representation
+?2D representation
+?Stereo vision
+?Feature extraction
+?Feature matching
+?Motion analysis
+?Range finder
+?Region analysis
+?Texture analysis
+?Color analysis
+?3D shape description and representation“","“Computer vision is the enterprise of automating and integrating a wide range of processes and representations for visual perception [Ballard and Brown 1982]. In this course, we plan to address the theoretic foundations and technical aspects of computer vision. It will cover branches of many different disciplines and has applications across the whole spectrum of science, art and humanities.
+The following issues will be introduced in this course.
+?Applications of computer vision
+?History of computer vision
+?2D Shape description and representation
+?2D representation
+?Stereo vision
+?Feature extraction
+?Feature matching
+?Motion analysis
+?Range finder
+?Region analysis
+?Texture analysis
+?Color analysis
+?3D shape description and representation“",Non,0,"Lecture
+		Seminar","Examination: 50％
+Report: 40％
+Others : 10％",Monday-Friday 9:00-5:00,16,According to the explanation provided by the instructor during class.,軟體工程與計算理論研究群
+52039,1142,Department of Computer Science and Elec. Engineering,CE6039-*,資料庫系統,Database,"Tsai, Meng-Feng",Master/Doctoral Programme,3,"“Students should understand the concepts of Database, as well as issues in design and management. 
+They should also learn the basic query language and methodologies related to normalization and performance optimization.“",Database concepts; Data Model; Integrity and management; Relational algebra and calculus; SQL; Table Normalization; Query optimization.,"“Fundamentals of Database Systems, 7th Edition,Ramez Elmasri, Shamkant B. Navathe.“",50,"Lecture
+		Seminar
+		Practical Training Lab","“Midterm Exam: 30％
+Project: 30％
+Assignments: 10％
+Final Exam: 30％“",Monday 9:00-11:00,16,According to the explanation provided by the instructor during class.,"資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52040,1142,Department of Computer Science and Elec. Engineering,CE6101-*,智慧型網路服務工程,Semantic Web services engineering,"Yang, Stephen J.H.",Master/Doctoral Programme,3,Learning outcome：Generative AI and LLMs innovation and their applications,"Learning outcome：Generative AI and LLMs innovation and their applications
+Literature review: 22 paper reading, Presentations, discussion, TA will inform you
+Flipped classroom:
+Before class (before noon on Monday of the previous week): Presentation email (15-page ppt) to TA ＆ teacher (Attachment 1)
+There are two presentations per week, and each one will be presented by one student. The number of presentations will be evenly distributed according to the number of students in the class.
+Before class: Everyone reads Presentations before class through BookRoll
+Before class (before noon on Monday of the current week): Each person email “Preview” report to TA ＆ teacher (Attachment 2)
+In class: Presentations reports and discussions
+After class (before noon on Wednesday of the week): Each person email “Reflection” report to TA ＆ teacher (Attachment 3)
+Use BookRoll in class, students please bring your own NB","“handout, cited paper references“",50,"Lecture
+		Seminar
+		Practical Training Lab
+		Individual Instruction","2 Presentations (30％)、22 previews (25％)、22 reflections (25％)
+1 midterm (10％) ＆ 1 final exams (10％)",Tue 10AM,16,According to the explanation provided by the instructor during class.,"數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52041,1142,Department of Computer Science and Elec. Engineering,CE6103-*,智慧型語言學習系統,Computer Assisted Language Learning,"Yang, Jie-Chi",Master/Doctoral Programme,3,"The objectives of this course are to introduce the development of the field of Computer Assisted Language Learning, to discuss the design principles of Computer Assisted Language Learning, and to implement a Computer Assisted Language Learning system.","The course includes: Lecture, Group discussion, and Group presentations (group project proposal, system exploration, group project final presentations).",Papers,100,"Lecture
+		Seminar
+		
+		Individual Instruction
+		Others","Group discussion (every week): 20％
+Group project proposal presentation: 15％
+System exploration presentation: 15％
+Group project final presentation: 30％
+Peer evaluation: 10％
+Attendance: 10％",Wed 13:00-16:00,16,discussion on research paper and system implementation,數位學習研究群
+52042,1142,Department of Computer Science and Elec. Engineering,CE6132-*,高等分散式計算模型,Advanced Distributed Computing Models,"Wang, Wei-Jen",Master/Doctoral Programme,3,"1. This course will present an overview of several distributed computing models 
+2. This course will assume familiarity with Java/C programming and operating systems","“Distributed Computing Model Overview,
+Concurrency and Consistency,
+Java Sockets,
+Java threads and synchronization,
+Message Passing Interface (MPI),
+Concept of Mobile Code and Mobile Agent,
+Actor Model and  SALSA Programming Language,
+Lambda-calculus and Petri-Net,
+Pi-Calculus,
+Mobile Ambients,
+Join-Calculus,
+Global State Detection
+“",Handouts and selected papers,90,Lecture,"“There will be one exam which will count 35％ of the course grade.
+ There will be approximately 2~3 individual assignments, which will together count 35％ of the course grade. 
+ Students will be asked to present selected papers, which will count 30％ of the course grade.
+“",Monday 13:00-14:00 or by appointment,16,The length of this course is 16+2 weeks. The last two weeks will be used for group discussions and feedbacks.,軟體工程與計算理論研究群
+52043,1142,Department of Computer Science and Elec. Engineering,CE6137-*,計算機結構,Computer Architecture,"Cheng, Hsu-Yung",Master/Doctoral Programme,3,Let the students understand the design and development of computer architecture,"“Fundamentals of Computer Design
+Instruction Set Principles and Pipelining
+Advanced Pipelining and Instruction Level Parallelism (ILP)
+Scoreboard, Tomasulo
+Branch Prediction
+Memory Hierarchy, Cache
+Virtual Memory
+I/O, Storage
+Multi-Processers“","“J. L. Hennessy and D. A. Patterson, Computer Architecture: A Quantitative Approach, fourth Edition, Morgan Kaufmann Publishing Co.
+D. A. Patterson and J. L. Hennessy , Computer Organization ＆ Design: The hardware/software interface, Morgan Kaufmann Publishing Co.“",0,Lecture,"15％ Quiz and Class Participation
+28％ Mid-term1
+28％ Mid-term2
+29％ Final Examination",Wednesday 13:30-14:30,16,According to the explanation provided by the instructor during class.,資安、網路、資料庫與系統研究群
+52044,1142,Department of Computer Science and Elec. Engineering,CE6147-*,巨量資料專題討論,Special Topics in Big Data,全體專任老師,Master/Doctoral Programme,2,Special Project in Computer Science,"“Paper Reading
+System Demo
+Group Discussion“",Selected papers/books,100,"Lecture
+		Seminar
+		
+		Individual Instruction",Individual Performance 100％,Appointments with Professors,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52045,1142,Department of Computer Science and Elec. Engineering,CE6148-*,混合現實的原理與應用,Mixed Reality: Technique and Applications,"Yeh, Shih-Ching",Master/Doctoral Programme,3,"“This course aiming at mixed reality intends to provide knowledge in regard with theory, technique and application. The course contents consider the width and the depth of the mixed reality associated knowledge. Further, students will catch up the advanced research topics via the latest-paper reading.“","“Computer graphics and animation
+Immersive display technology
+Haptics
+Interactive technology
+Virtual Reality
+Augmented Reality
+Application on neuro-motor rehabilitation
+Application on neuro-cognitive rehabilitation
+Application on mental treatment
+Application on education
+“",N.A.,100,Lecture,"“Homework: 30％
+Mid-Exam: 20％
+Final-Exam: 30％
+Paper Presentation: 20％
+“",Thursday 9:00-12:00,16,According to the explanation provided by the instructor during class.,人工智慧、資料科學與多媒體研究群
+52046,1142,Department of Computer Science and Elec. Engineering,CE6152-*,書報討論,Seminar,Hui-Ju Hung,Master Programs,1,,,,0,,,,16,According to the explanation provided by the instructor during class.,
+52047,1142,Department of Computer Science and Elec. Engineering,CE6166-*,資料庫系統實作專題,Practical special topics on Database System,"Chen, Gwo-Dong",Master/Doctoral Programme,3,To let students understand database system through Application development,"Database Concept , Data Model , Database design,
+Based on a given application, transaction design on database. Database query , data characteristic definition.","Fundamentals of database system 7th edition
+Ramez Elmasri, Shamkant B. Navathe",50,"Lecture
+		
+		Practical Training Lab","Midterm exam 20％, 
+Usual grades (including classroom practice/homework/roll call) 40％, 
+Final exam 20％, 
+Final group project 20％","""Monday, at 13:00-16:00pm""",16,According to the explanation provided by the instructor during class.,資安、網路、資料庫與系統研究群
+52048,1142,Department of Computer Science and Elec. Engineering,CE6167-*,隱私保護資料分析,Privacy-Preserving Data Analysis,Hui-Ju Hung,Master/Doctoral Programme,3,The goal of privacy preserving data analysis is to retrieve useful information from big data while preserving users’ privacy. This course will provide a comprehensive introduction to the concepts and methods of privacy-preserving data analysis.,"This course will introduce four key concepts:
+1. Data Anonymization: This involves techniques such as k-anonymity and l-diversity, which are employed to prevent linking attacks and homogeneity attacks.
+2. Differential Privacy: This is a mathematical framework for releasing statistical information about datasets while protecting the privacy of individual data subjects, which protects individual’s privacy by injecting carefully calibrated noise into the released data.
+3. Cryptography: This involves techniques like secure multiparty computation, which allows multiple organizations or individuals to collaborate on computations without disclosing their own data.
+4. Federated Learning: This is a decentralized learning approach that enables participants to keep their data local while collaboratively training a machine learning model, balancing privacy protection with model performance.","References:
+1.	Charu C. Aggarwal and Philip S. Yu. Privacy-Preserving Data Mining: Models and Algorithms.
+2.	Cynthia Dwork and Aaron Roth. The Algorithmic Foundations of Differential Privacy.",100,"Lecture
+		Seminar
+		
+		
+		Others","Homework (15％)
+Paper presentation (15％)
+Midterm exam (30％)
+Final project (35％)
+Class participation (5％)",Thursdays 11:00-12:00,16,The 17th and 18th weeks will be for project discussion.,人工智慧、資料科學與多媒體研究群
+52049,1142,Department of Computer Science and Elec. Engineering,CE6168-*,資訊安全與隱私概論,Introduction to Information Security and Privacy,"Yang,Hao-Tsung",Master/Doctoral Programme,3,"This course will impart a technical and social understanding of how and why security and privacy matter, how to think adversarially, how (and how not) to design systems and products.","Topics include but limit to user authentication, cryptography, malware, behavioral economics in security, human factors in security, privacy and anonymity, adversarial modeling, and attack and defense in internet of things.",None,100,Lecture,"30％ Class activity
+20％ Group project
+20％ Midterm
+30％ Finals",Thu. 1pm- 4pm,16,Extension on course materials,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群"
+52050,1142,Department of Computer Science and Elec. Engineering,CE7030-*,無線感測網路協定與應用,Protocols and Applications for Wireless Sensor Networks,"Chang, Guey-Yun",Master/Doctoral Programme,3,建立學生物聯網技術理論基礎並培養學生實作經驗。,"“1。物聯網感知層與網路建構
+2。物聯網網路層
+3。物聯網應用層：雲端服務
+4。物聯網安全“",,100,"Lecture
+		
+		Practical Training Lab",,0,16,According to the explanation provided by the instructor during class.,
+52051,1142,Department of Computer Science and Elec. Engineering,CE7066-*,社群媒體探勘,Social Media Mining,"TSAI, TZONG-HAN",Master/Doctoral Programme,3,"""社群媒體包含facebook, twitter等等, 已成為網路使用者最頻繁使用之信息交流管道。主要社群媒體，均擁有數以千萬的使用者，並產生巨量訊息流通。在本院系導入資訊探勘技術，以分析信息內容、社群使用者關係，使用者與產品關聯性，在Big Data時代，將有非常重要的產業與研究價值。""","1. Graph Essentials
+2. Network Measures
+3. Network Models
+4. Data Mining Essentials
+5. Community Analysis
+6. Information Diffusion
+7. Influence and Homophily
+8. Recommendation in Social Media
+9. Opinion Mining for Social Texts",Social Media Mining: An Introduction,0,"Lecture
+		Seminar","Homework assignments (20%)  ?
+Midterm Exam (30%)
+Paper Presentation (20%)
+Final Project (30%)","""Mon. 10am-1pm, 4pm-5pm""",16,According to the explanation provided by the instructor during class.,軟體工程與計算理論研究群
+52052,1142,Department of Computer Science and Elec. Engineering,CE7067-*,論文研討,Thesis Research in Computer Science,指導教授,Master Programs,1,"“Research Progress
+Finish Thesis“","“Paper presentation
+Thesis discussion“",N/A,100,"Seminar
+		
+		Individual Instruction",Research Progress,Appointment,16,研讀、討論、分享領域最新研究成果。,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52053,1142,Department of Computer Science and Elec. Engineering,CE7068-*,論文研討,Thesis Research in Computer Science,指導教授,Master Programs,1,"“Research Progress
+Finish Thesis“","“Paper presentation
+Thesis discussion“",N/A,100,"Seminar
+		
+		Individual Instruction",Research Progress,Appointment,16,研讀、討論、分享領域最新研究成果。,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52054,1142,Department of Computer Science and Elec. Engineering,CE7069-*,論文研討,Thesis Research in Computer Science,指導教授,Master Programs,1,"“Research Progress
+Finish Thesis“","“Paper presentation
+Thesis discussion“",N/A,0,"Seminar
+		
+		Individual Instruction",Research Progress,Appointment,16,研讀、討論、分享領域最新研究成果。,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52055,1142,Department of Computer Science and Elec. Engineering,CE7070-*,論文研討,Thesis Research in Computer Science,指導教授,Master Programs,1,"“Research Progress
+Finish Thesis“","“Paper presentation
+Thesis discussion“",N/A,100,"Seminar
+		
+		Individual Instruction",Research Progress,Appointment,16,研讀、討論、分享領域最新研究成果。,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52056,1142,Department of Computer Science and Elec. Engineering,CE7076-*,生成式人工智慧與基礎模型於生物資訊之理論與應用,Generative Artificial Intelligence and Foundation Models in Bioinformatics: Theory and Applications,Chung Chia Ru,Undergraduate Programme,3,"1. Understand the core concepts and algorithmic principles of generative AI and foundation models.
+2. Analyze the characteristics and challenges of multimodal biological data, including genomic, proteomic, and transcriptomic datasets.
+3. Design and implement AI models tailored for bioinformatics analysis.
+4. Critically evaluate model performance, interpretability, and limitations in biomedical applications.
+5. Develop interdisciplinary perspectives and apply AI approaches to foster innovation in biomedical and precision medicine research.","1. Theoretical Foundations and Architectures of Generative AI and Foundation Models
+2. Characteristics and Challenges of Multimodal Biological Data
+3. Design and Implementation of AI Models for Bioinformatics Analysis
+4. Evaluation, Interpretability, and Limitations of AI Models in Biomedicine
+5. Interdisciplinary Integration and Innovation in AI-driven Biomedicine","1. Pierre Baldi and Søren Brunak (2001, updated ed.). Bioinformatics: The Machine Learning Approach. MIT Press.
+2. Ian Goodfellow, Yoshua Bengio, Aaron Courville (2016). Deep Learning. MIT Press.",100,"Lecture
+		Seminar
+		Practical Training Lab","1. Class Participation: 20％
+2. Homework: 30％
+3. Final Exam: 20％
+4. Final Project: 30％","Wed. 10:00-12:00, or by appointment",16,According to the explanation provided by the instructor during class.,人工智慧、資料科學與多媒體研究群
+52057,1142,Department of Computer Science and Elec. Engineering,CE8013-*,AI與資訊安全 R&D,AI for Security R&D,韓伯維,Master/Doctoral Programme,3,"This course combines the fields of AI and security.
+More specifically, it is built around small highly collaborative teams consisting of a mix of students with AI and/or security backgrounds. 
+These teams will tackle a series of assignments where they learn how to utilize AI to solve various security problems inspired by real-world scenarios.","The areas mixed with AI and Security are taught in this class. Aside from lectures, students are required to conduct research and development as a group within a topic. Based on the assignments given, a research report is finalized for each group. This not only enhances the ability to collaborate as a team but also independent research skills.",No textbook,100,"Lecture
+		Seminar","評量配分比重(外文)
+Grading(In English or other languages)	Grades will be primarily based on assignment performance; there are no tests in this class.
+This course will make extensive use of Python, but students may also need to utilize tools such as CLI, Latex, and in conjunction with whatever scripting/programming language is most appropriate. Note that this course not only requires research and development but also extensive English writing and presentation in groups.
+Group: Oral Elevator Pitch (5％)
+Group: Written Proposal (20％)
+Group: Check Point Presentation (10％)
+Group: Check Point Progress Report (10％)
+Individual: A Paper Presentation (15％)
+Group: Final Presentation (15％)
+Group: Individual Evaluation (5%)
+Group: Final Report (20％)",TBD,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群"
+52058,1142,Department of Computer Science and Elec. Engineering,CE8014-*,AI代理系統之設計與開發,Agentic AI: Foundations and Development,"Chang, Chia-Hui",Master/Doctoral Programme,3,"With the advances in computer vision, speech recognition, and large language models, we can now equip computers with perception and generative ability. Large language models brained Agents in particular have been a key breakthrough, allowing Agentic AI to reason its world through natural language and leverage broad knowledge to make smarter decisions.
+This course aims to explore the theoretical foundations of Agentic AI and the platforms and tools for developing AI agents. The focus will be guiding students in creating autonomous agents capable of operating independently, making decisions in complex environments, and completing sophisticated tasks.
+
+Learning Objectives
+Upon completing this course, students will be able to:
+Understand the fundamental principles and architecture of Agentic AI systems.
+Design and implement essential AI agents using modern frameworks and tools.
+Consider ethical and safety aspects in AI agent design.
+Evaluate the performance and limitations of Agentic AI systems.
+Assess the challenges AI agents face when interacting in real-world environments.
+
+Prerequisites
+Programming background (Python)
+Familiarity with basic artificial intelligence concepts
+Fundamental knowledge of machine learning and neural networks","This hands-on course focuses on developing autonomous AI agents with practical applications, emphasizing web interaction, multi-agent systems, memory management, and human-in-the-loop learning. Students will progressively build an agent system through four interconnected assignments and a final project.
+Weeks 1: Course Introduction
+● Introduction to agency in AI systems
+● Historical development of autonomous agents
+● Agent architectures and frameworks
+● Core components: perception, reasoning, and action
+● Practical: Building a simple rule-based agent
+● Readings: Agentic AI concepts, Chatbots vs. Copilots vs. AI Agents
+Weeks 2-4: Assignment 1 - Reflexive Web Agent with Tools Use (15%)
+● Language models brained agents
+● Prompt engineering for agency
+● Tool use and API interaction
+● LLM Reasoning: Chain-of-Thoughts, Tree-of-Thoughts
+● Schema-guided task-oriented dialog systems
+● Vision Language Models models
+Technical Focus
+● Prompt Engineering: Assign specialized roles and pre-built and custom tools to agents
+● Planning algorithm
+● Basic web interaction patterns
+● Selenium
+● Web Crawling
+Weeks 5-7: Assignment 2 - Self-Reflection via MultiAgent Collaboration (15%)
+● Agent communication and coordination framework: Collaborative and competitive agents
+● Decision-making under uncertainty
+● Reinforcement learning for agent behavior
+● Self-Reflection mechanism
+● Evaluation of task result for decision-making
+● Guardrails: consider governance in design, development and deployment stages
+Technical Focus
+● Break down the tasks, goals, and tools and assign to multiple AI agents for better performance
+● LangChain, LangGraph, AutoGen, CrewAI
+Weeks 8-10: Assignment 3 - Agents with Memory Recall via RAG (15%)
+● Memory management systems: Provide agents with short-term, long-term, and shared memory
+● Goal representation and task decomposition
+● Information retrieval based on embedding
+● Retrieval augmented generation
+● Object reference resolution
+Technical Focus
+● RAG architecture design
+● Query optimization
+Week 11: Midterm Examination (15%)
+Weeks 12-14: Human in the Loop Reinforcement Learning (15%)
+● Human in the Loop Interaction
+● Experience recording
+● Memory persistence
+● Task decomposition and Hierarchical architectures
+● Adaptive behavior patterns Technical Focus
+● Instruction-guided learning implementation
+● RAG optimization for learned behaviors
+Weeks 15-18: Final Project (25%)
+● Integrate all previous assignments to a real-world environment
+● Define environment and actions, e.g. LINE APP, Windows OS, or Smart Home APP
+● Guardrails: Effectively handle errors, hallucinations, and infinite loops
+Technical Focus
+● Complete agent system integration
+● Environment-specific adaptations
+● Comprehensive documentation
+● Performance optimization","1. Agentic AI: Autonomous Intelligence for Complex Goals—A Comprehensive Survey
+https://ieeexplore.ieee.org/abstract/document/10849561
+2. LLM-Brained GUI Agents Survey https://arxiv.org/abs/2411.18279
+3. GUI Agents Survey https://arxiv.org/abs/2412.13501
+4. OS Agents https://github.com/OS-Agent-Survey/OS-Agent-Survey",100,"Lecture
+		Seminar
+		Practical Training Lab","3 Programming Assignments: 45%
+Paper Reading & Oral Report: 10%
+Involvement & Discussion: 10%
+Mid-term Exam: 15%
+Final Project: 20%",Monday 8:30am-9:30pm; 4:00pm-5:00pm,16,We encourage students to submit their final projects to conferences and journals.,人工智慧、資料科學與多媒體研究群
+52059,1142,Department of Computer Science and Elec. Engineering,CEA011-*,機器學習,Machine Learning,"Sun, Min-Te(Peter)",Master Programme (Adult Learning),3,,,,0,,,,16,According to the explanation provided by the instructor during class.,
+52060,1142,Department of Computer Science and Elec. Engineering,CEA018-*,互動科技及3D遊戲技術於醫學工程暨復健的應用,Interactive Technologies and Serious Games for Rehabilitation,"Yeh, Shih-Ching",Master Programme (Adult Learning),3,,,,0,,,0,16,According to the explanation provided by the instructor during class.,
+52061,1142,Department of Computer Science and Elec. Engineering,CEA036-*,電腦攻擊與防禦,The Attack and Defense of Computers,"Hsu, Fu-Hau",Master Programme (Adult Learning),3,To learn to principle of various system attacks and the approaches to protect a system against these attacks.,"“Scanning
+Enumeration
+Port-Scanning
+OS fingerprinting.
+Hacking Unix
+Buffer Overflow Attacks/Return Into Libc Attacks
+Internet Worm
+Format String Attacks
+Input Validation Attacks
+Integer Overflow and Integer Sign Attacks
+TCP session Hijackng
+Denial of Service Attacks/Distributed DoS
+Malware: Virus, Trojan Horse, Spyware, Rootkit, Dialer, Key logger
+Cross Site Script (XSS)
+SQL Injection“",Lectrue Slides,100%,Lecture,"Midterm 25％
+Final 40％
+Assignment 30％
+Attendance: 5％",Wed. afternoon,16,adjust according to the progress of the lectures,資安、網路、資料庫與系統研究群
+52062,1142,Department of Computer Science and Elec. Engineering,CEA037-*,嵌入式系統設計,Embedded System Design,"Chen, Ching-Han",Master Programme (Adult Learning),3,"“In this course, we will explore the methods and techniques of hardware and firmware design for embedded systems. Including the selection of embedded processors, hardware / firmware cutting, peripheral drives, system architecture, development tools, embedded software design and other topics. This course is based on the ARM Cortex-M7 microprocessor architecture, and the STM32H743 MCU is used as an experimental platform. Through experiments, various peripheral drivers and embedded intermediary software development and implementation are conducted, allowing students to understand the embedded system design methodology and system implementation Workflow.“","“1.嵌入式系統設計方法論簡介
+2.嵌入式系統架構設計
+3.嵌入式系統離散事件建模
+4.嵌入式軟體高階合成
+5，DIO_AIO
+6.UART_I2C_SPI通訊介面
+7，Timer_Counter_PWM
+8.應用周邊1_九軸感測器MPU9255_加速計_陀螺儀_磁力計
+9.應用周邊2_Touch LCD
+10.應用周邊3_VL53L0X距離感測與LiDAR
+11.藍牙_麥克風_溫濕度
+12.嵌入式視覺系統開發
+13.嵌入式神經網路
+14.期末專題：架構設計
+15.期末專題：離散事件建模
+16.期末專題：高階合成與軟硬體整合驗證
+1. Qi?nr? sh? x?t?ng sh?j? f?ngf?l?n ji?nji?
+2. Qi?nr? sh? x?t?ng ji?g?u sh?j?
+3. Qi?nr? sh? x?t?ng l?s?n sh?ji?n ji?n m?
+4. Qi?nr? sh? ru?nt? g?oji? h?ch?ng
+5,DIO_AIO
+6.UART_I2C_SPI t?ngx?n ji?mi?n
+7,Timer_Counter_PWM
+8. Y?ngy?ng zh?ubi?n 1_ji? zh?u g?n c? q? MPU9255_ji?s? j?_tu?lu? y?_c?l? j?
+9. Y?ngy?ng zh?ubi?n 2_Touch LCD
+10. Y?ngy?ng zh?ubi?n 3_VL53L0X j?l? g?n c? y? LiDAR
+11. L?ny?_m?ik?f?ng_w?n sh?d?
+12. Qi?nr? sh? sh?ju? x?t?ng k?if?
+13. Qi?nr? sh? sh?nj?ng w?ng l?
+14. Q?m? zhu?nt?: Ji?g?u sh?j?
+15. Q?m? zhu?nt?: L?s?n sh?ji?n ji?n m?
+16. Q?m? zhu?nt?: G?oji? h?ch?ng y? ru?n y?ng t? zh?ngh? y?nzh?ng
+顯示更多內容
+266/5000
+1.Introduction to Embedded System Design Methodology
+2. Embedded system architecture design
+3. Discrete event modeling for embedded systems
+4. Embedded software advanced synthesis
+5, DIO_AIO
+6.UART_I2C_SPI communication interface
+7, Timer_Counter_PWM
+8. Application Peripheral 1_Nine-axis Sensor MPU9255_Accelerometer_Gyroscope_Magnetometer
+9. Application peripheral 2_Touch LCD
+10. Application peripheral 3_VL53L0X distance sensing and LiDAR
+11.Bluetooth_microphone_temperature and humidity
+12. Embedded vision system development
+13. Embedded Neural Network
+14. Closing Topic: Architecture Design
+15. Closing Topic: Discrete Event Modeling
+16. End-of-Term Topic: High-Level Synthesis and Integration of Software and Hardware“",Handouts,100,"Lecture
+		
+		Practical Training Lab","3 Assignments: 20％
+Midterm: 30％
+Final Project Report (written and oral): 50％","""10:00~12:00, Tuesday""",16,According to the explanation provided by the instructor during class.,資安、網路、資料庫與系統研究群
+52063,1142,Department of Computer Science and Elec. Engineering,CEA051-*,論文討論Ⅰ,Thesis Research,教授群,Master Programme (Adult Learning),3,4oCcUmVzZWFyY2ggUHJvZ3Jlc3MKRmluaXNoIFRoZXNpc+KAnA==,4oCcUGFwZXIgcHJlc2VudGF0aW9uClRoZXNpcyBkaXNjdXNzaW9u4oCc,Ti9B,100,"Seminar
+		
+		Individual Instruction",UmVzZWFyY2ggUHJvZ3Jlc3M=,Appointment,16,"Study, discuss and share the latest research results in the field.","人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52064,1142,Department of Computer Science and Elec. Engineering,CEA052-*,論文討論Ⅱ,Thesis Research,指導教授,Master Programme (Adult Learning),3,"“Research Progress
+Finish Thesis“","“Paper presentation
+Thesis discussion“",N/A,100,"Seminar
+		
+		Individual Instruction",Research Progress,Appointment,16,According to the explanation provided by the instructor during class.,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			資安、網路、資料庫與系統研究群
+			
+			
+				、
+			
+		
+			數位學習研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52065,1142,Department of Computer Science and Elec. Engineering,CEA055-*,社群媒體探勘,Social Media Mining,"TSAI, TZONG-HAN",Master Programme (Adult Learning),3,,,,,Lecture,,,16,According to the explanation provided by the instructor during class.,
+52066,1142,Department of Computer Science and Elec. Engineering,SE6029-*,物件導向分析與設計,Object-Oriented Analysis and Design,"Cheng, Yung-Pin",Master/Doctoral Programme,3,To teach students the basic concepts of object-oriented programming and analysis so that students can write maintainable object-oriented source code in their implementation.,"1. Introduction to software engineering
+2. The history of object-oriented technology
+3. An introduction to C++
+4. Inheritance
+5. Polymorphism
+6. encapsulation
+7. modeling
+8. Database normalization and  ERD diagram
+9. UML Class Diagram
+10. UML sequence Diagram
+11. Design Patterns","“1. An Introduction to Object-Oriented Analysis (objects and UML in plain English) by David William Brown.
+2. UML Distilled, A brief guide to the standard object modeling language -  Martin Fowler
+3. Design Patterns
+4. Head First Design Pattern“",0,"Lecture
+		
+		Practical Training Lab","1. Programming project and exercise 60％
+2. Case Study 10％
+3. written exam 30％",四/567,16,According to the explanation provided by the instructor during class.,數位學習研究群
+52067,1142,Department of Computer Science and Elec. Engineering,SE6030-*,軟體工程實務,Software engineering practices,"Liang, De-Ron
+Cheng, Yung-Pin",Master/Doctoral Programme,3,"The students are asked to learn the following skills and concepts:  
+1. Debugging  
+2. Code tracing  
+3. Rebuilding flow charts from a given program  
+4. SPLC  
+5. Fundamental software documentation  
+6. Software quality management  
+7. Testing  
+8. Code review  
+9. Software project management","1. Debugging
+2. Code tracing
+3. Rebuilding flow charts from a given program
+4. SPLC
+5. Fundamental software documentation
+6. Software quality management
+7. Testing
+8. Code review
+9. Software project management","Sommerville,“Software Engineerig (7th Edition)”, SOMMERVILLE, 2004.",100,"Lecture
+		
+		Practical Training Lab",100% labs/assignments,By appointments,16,Online learning and self-directed learning,軟體工程與計算理論研究群
+52068,1142,Department of Computer Science and Elec. Engineering,SE6032-*,資料科學實務,Data Science Practice,"Liang, De-Ron
+chia yu,lin",Master/Doctoral Programme,3,"The objective of this course is aimed at cultivating abilities to data science practice on students. Many data analysis methods would be included into the class and lab, and also the data explanation skills.","W1: 課程介紹 (syllabus、term project說明)    Part I: Data Collection ＆ Pre-processing
+W2: Manual Data Collection: CGI/Automatic data collection: Clock syn.
+W3: Holiday
+W4: Data preprocessing/Data cleansing
+W5: Data Augmentation (GAN)/Demos for Midterm proposal ＆ cross evaluation    Part II: Feature Extraction ＆ Transformation
+W6: Feature data vs. Histogram/KL Divergence (KLD)
+W7: Midterm: proposal reviews
+W8: Holiday
+W9: GMM, HHT ＆ PCA    Part III: Modeling, Experiment design ＆ Results
+W10: t-Test, Wilcoxon Signed Rank test ＆ Chi Square test
+W11: Random sampling, Stratified random sampling (SRS) ＆ cross validation     Part IV: Applications  W12: Smart Factory-CNN
+W13: Smart Factory-EM
+W14: Final Projects Presentation
+W15: Final Projects Presentation
+W16: Final Projects Presentation    Part V: Advanced Topics (彈性授課)",no textbook needed,100,"Lecture
+		
+		Practical Training Lab
+		
+		Others",Final Project 40％  Lab Assignment 30％  GN Reviews 15％  Attendance 15％,Thursday 11 am or Make an appointment via email,16,project with special topics,"人工智慧、資料科學與多媒體研究群
+			
+			
+				、
+			
+		
+			軟體工程與計算理論研究群"
+52069,1142,Department of Computer Science and Elec. Engineering,SE6033-*,書報討論,Seminar,"Chang, Chia-Hui",Master Programs,1,,,,0,,,,16,According to the explanation provided by the instructor during class.,
+52070,1142,Department of Computer Science and Elec. Engineering,CE3071-00,B5G 通訊與衛星通訊安全導論,Introduction to B5G Communications and Satellite Communication Security,"Chuang,Shu-min",Undergraduate Programme,3,,,,0,Lecture,,,,,
+52071,1142,Department of Computer Science and Elec. Engineering,CE5061-00,虛擬機系統與應用,Principle and Application of System Virtualization,"Tseng, Li-Ming",Master/Doctoral Programme,3,,,,0,Lecture,,,,,
