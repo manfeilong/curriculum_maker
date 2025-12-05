@@ -1,0 +1,439 @@
+[
+  {
+    "course_id": "52009",
+    "code": "CE2009-*",
+    "name": "電子電路學",
+    "teacher": "任玄",
+    "credits": 3,
+    "times": [
+      {"day": 3, "sections": [5, 6, 13]}
+    ],
+    "scores": {
+      "difficulty": 75,
+      "grading_leniency": 65,
+      "homework_load": 75,
+      "ai_related": 30,
+      "art_literature_related": 0,
+      "economics_related": 0,
+      "engineering_related": 90
+    }
+  },
+  {
+    "course_id": "52012",
+    "code": "CE2036-*",
+    "name": "資訊與社會服務Ⅱ",
+    "teacher": "蔡宗翰",
+    "credits": 3,
+    "times": [
+      {"day": 2, "sections": [10, 11, 12]}
+    ],
+    "scores": {
+      "difficulty": 65,
+      "grading_leniency": 80,
+      "homework_load": 50,
+      "ai_related": 40,
+      "art_literature_related": 0,
+      "economics_related": 20,
+      "engineering_related": 50
+    }
+  },
+  {
+    "course_id": "52019",
+    "code": "CE3068-*",
+    "name": "雲端服務安全",
+    "teacher": "王尉任",
+    "credits": 3,
+    "times": [
+      {"day": 1, "sections": [5, 6, 7]}
+    ],
+    "scores": {
+      "difficulty": 70,
+      "grading_leniency": 68,
+      "homework_load": 65,
+      "ai_related": 60,
+      "art_literature_related": 0,
+      "economics_related": 10,
+      "engineering_related": 60
+    }
+  },
+  {
+    "course_id": "52027",
+    "code": "CE5033-*",
+    "name": "統計方法與資料採礦",
+    "teacher": "鍾佳儒",
+    "credits": 3,
+    "times": [
+      {"day": 2, "sections": [6, 7, 8]}
+    ],
+    "scores": {
+      "difficulty": 85,
+      "grading_leniency": 70,
+      "homework_load": 80,
+      "ai_related": 95,
+      "art_literature_related": 0,
+      "economics_related": 30,
+      "engineering_related": 85
+    }
+  },
+  {
+    "course_id": "52029",
+    "code": "CE5065-*",
+    "name": "使用者界面設計和評鑑",
+    "teacher": "陳依華",
+    "credits": 3,
+    "times": [
+      {"day": 3, "sections": [7, 8, 9]}
+    ],
+    "scores": {
+      "difficulty": 70,
+      "grading_leniency": 75,
+      "homework_load": 70,
+      "ai_related": 60,
+      "art_literature_related": 40,
+      "economics_related": 10,
+      "engineering_related": 50
+    }
+  },
+  {
+    "course_id": "52030",
+    "code": "CE5066-*",
+    "name": "生物與醫學資訊之資訊探勘",
+    "teacher": "洪炳宗",
+    "credits": 3,
+    "times": [
+      {"day": 3, "sections": [2, 3, 4]}
+    ],
+    "scores": {
+      "difficulty": 80,
+      "grading_leniency": 70,
+      "homework_load": 75,
+      "ai_related": 95,
+      "art_literature_related": 10,
+      "economics_related": 10,
+      "engineering_related": 70
+    }
+  },
+  {
+    "course_id": "52031",
+    "code": "CE5081-*",
+    "name": "學習、合作與創造",
+    "teacher": "劉晨鐘",
+    "credits": 3,
+    "times": [
+      {"day": 2, "sections": [5, 6, 7]}
+    ],
+    "scores": {
+      "difficulty": 65,
+      "grading_leniency": 80,
+      "homework_load": 70,
+      "ai_related": 60,
+      "art_literature_related": 50,
+      "economics_related": 10,
+      "engineering_related": 50
+    }
+  },
+  {
+    "course_id": "52032",
+    "code": "CE5084-*",
+    "name": "影音訊號處理實務",
+    "teacher": "王家慶",
+    "credits": 3,
+    "times": [
+      {"day": 4, "sections": [6, 7, 8]}
+    ],
+    "scores": {
+      "difficulty": 70,
+      "grading_leniency": 80,
+      "homework_load": 75,
+      "ai_related": 80,
+      "art_literature_related": 40,
+      "economics_related": 10,
+      "engineering_related": 90
+    }
+  },
+  {
+    "course_id": "52033",
+    "code": "CE5087-*",
+    "name": "科技風險管理",
+    "teacher": ["孫敏德", "李逸元"],
+    "credits": 3,
+    "times": [
+      {"day": 2, "sections": [5, 6, 7]}
+    ],
+    "scores": {
+      "difficulty": 75,
+      "grading_leniency": 70,
+      "homework_load": 80,
+      "ai_related": 40,
+      "art_literature_related": 10,
+      "economics_related": 60,
+      "engineering_related": 70
+    }
+  },
+  {
+    "course_id": "52034",
+    "code": "CE5088-*",
+    "name": "深度強化學習",
+    "teacher": "林建昌",
+    "credits": 3,
+    "times": [
+      {"day": 5, "sections": [5, 6, 7]}
+    ],
+    "scores": {
+      "difficulty": 85,
+      "grading_leniency": 70,
+      "homework_load": 85,
+      "ai_related": 100,
+      "art_literature_related": 20,
+      "economics_related": 10,
+      "engineering_related": 90
+    }
+  },
+  {
+    "course_id": "52038",
+    "code": "CE6032-*",
+    "name": "電腦視覺",
+    "teacher": "范國清",
+    "credits": 3,
+    "times": [
+      {"day": 5, "sections": [2, 3, 4]}
+    ],
+    "scores": {
+      "difficulty": 75,
+      "grading_leniency": 65,
+      "homework_load": 70,
+      "ai_related": 95,
+      "art_literature_related": 30,
+      "economics_related": 10,
+      "engineering_related": 85
+    }
+  },
+  {
+    "course_id": "52039",
+    "code": "CE6039-*",
+    "name": "資料庫系統",
+    "teacher": "蔡孟峰",
+    "credits": 3,
+    "times": [
+      {"day": 1, "sections": [5, 6, 7]}
+    ],
+    "scores": {
+      "difficulty": 75,
+      "grading_leniency": 75,
+      "homework_load": 80,
+      "ai_related": 70,
+      "art_literature_related": 10,
+      "economics_related": 20,
+      "engineering_related": 90
+    }
+  },
+  {
+    "course_id": "52040",
+    "code": "CE6101-*",
+    "name": "智慧型網路服務工程",
+    "teacher": "楊鎮華",
+    "credits": 3,
+    "times": [
+      {"day": 2, "sections": [6, 7, 8]}
+    ],
+    "scores": {
+      "difficulty": 70,
+      "grading_leniency": 80,
+      "homework_load": 85,
+      "ai_related": 95,
+      "art_literature_related": 20,
+      "economics_related": 15,
+      "engineering_related": 85
+    }
+  },
+  {
+    "course_id": "52041",
+    "code": "CE6103-*",
+    "name": "智慧型語言學習系統",
+    "teacher": "楊接期",
+    "credits": 3,
+    "times": [
+      {"day": 3, "sections": [5, 6, 7]}
+    ],
+    "scores": {
+      "difficulty": 65,
+      "grading_leniency": 85,
+      "homework_load": 70,
+      "ai_related": 80,
+      "art_literature_related": 60,
+      "economics_related": 20,
+      "engineering_related": 70
+    }
+  },
+  {
+    "course_id": "52042",
+    "code": "CE6132-*",
+    "name": "高等分散式計算模型",
+    "teacher": "王尉任",
+    "credits": 3,
+    "times": [
+      {"day": 1, "sections": [2, 3, 4]}
+    ],
+    "scores": {
+      "difficulty": 85,
+      "grading_leniency": 70,
+      "homework_load": 80,
+      "ai_related": 60,
+      "art_literature_related": 10,
+      "economics_related": 15,
+      "engineering_related": 95
+    }
+  },
+  {
+    "course_id": "52043",
+    "code": "CE6137-*",
+    "name": "計算機結構",
+    "teacher": "鄭旭詠",
+    "credits": 3,
+    "times": [
+      {"day": 5, "sections": [5, 6, 7]}
+    ],
+    "scores": {
+      "difficulty": 90,
+      "grading_leniency": 60,
+      "homework_load": 85,
+      "ai_related": 75,
+      "art_literature_related": 5,
+      "economics_related": 10,
+      "engineering_related": 100
+    }
+  },
+  {
+    "course_id": "52045",
+    "code": "CE6148-*",
+    "name": "混合現實的原理與應用",
+    "teacher": "葉士青",
+    "credits": 3,
+    "times": [
+      {"day": 2, "sections": [7, 8, 9]}
+    ],
+    "scores": {
+      "difficulty": 70,
+      "grading_leniency": 75,
+      "homework_load": 80,
+      "ai_related": 80,
+      "art_literature_related": 50,
+      "economics_related": 20,
+      "engineering_related": 85
+    }
+  },
+  {
+    "course_id": "52048",
+    "code": "CE6167-*",
+    "name": "隱私保護資料分析",
+    "teacher": "洪慧儀",
+    "credits": 3,
+    "times": [
+      {"day": 4, "sections": [5, 6, 7]}
+    ],
+    "scores": {
+      "difficulty": 80,
+      "grading_leniency": 70,
+      "homework_load": 75,
+      "ai_related": 85,
+      "art_literature_related": 10,
+      "economics_related": 15,
+      "engineering_related": 80
+    }
+  },
+  {
+    "course_id": "52049",
+    "code": "CE6168-*",
+    "name": "資訊安全與隱私概論",
+    "teacher": "楊皓琨",
+    "credits": 3,
+    "times": [
+      {"day": 5, "sections": [5, 6, 7]}
+    ],
+    "scores": {
+      "difficulty": 75,
+      "grading_leniency": 75,
+      "homework_load": 70,
+      "ai_related": 70,
+      "art_literature_related": 10,
+      "economics_related": 20,
+      "engineering_related": 85
+    }
+  },
+  {
+    "course_id": "52050",
+    "code": "CE7030-*",
+    "name": "無線感測網路協定與應用",
+    "teacher": "張貴雲",
+    "credits": 3,
+    "times": [
+      {"day": 4, "sections": [6, 7, 8]}
+    ],
+    "scores": {
+      "difficulty": 70,
+      "grading_leniency": 75,
+      "homework_load": 80,
+      "ai_related": 70,
+      "art_literature_related": 10,
+      "economics_related": 15,
+      "engineering_related": 90
+    }
+  },
+  {
+    "course_id": "52051",
+    "code": "CE7066-*",
+    "name": "社群媒體探勘",
+    "teacher": "蔡宗翰",
+    "credits": 3,
+    "times": [
+      {"day": 4, "sections": [5, 6, 7]}
+    ],
+    "scores": {
+      "difficulty": 75,
+      "grading_leniency": 70,
+      "homework_load": 80,
+      "ai_related": 85,
+      "art_literature_related": 20,
+      "economics_related": 30,
+      "engineering_related": 70
+    }
+  },
+  {
+    "course_id": "52056",
+    "code": "CE7076-*",
+    "name": "生成式人工智慧與基礎模型於生物資訊之理論與應用",
+    "teacher": "鍾佳儒",
+    "credits": 3,
+    "times": [
+      {"day": 3, "sections": [5, 6]}
+    ],
+    "scores": {
+      "difficulty": 85,
+      "grading_leniency": 70,
+      "homework_load": 85,
+      "ai_related": 100,
+      "art_literature_related": 10,
+      "economics_related": 10,
+      "engineering_related": 90
+    }
+  },
+  {
+    "course_id": "52057",
+    "code": "CE8013-*",
+    "name": "AI與資訊安全 R&D",
+    "teacher": "韓伯維",
+    "credits": 3,
+    "times": [
+      {"day": 3, "sections": [7, 8, 9]}
+    ],
+    "scores": {
+      "difficulty": 80,
+      "grading_leniency": 70,
+      "homework_load": 85,
+      "ai_related": 95,
+      "art_literature_related": 10,
+      "economics_related": 20,
+      "engineering_related": 85
+    }
+  }
+]
