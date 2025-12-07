@@ -1,1 +1,0 @@
-print("hello 我是阿Q脆麵")
