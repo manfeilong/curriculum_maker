@@ -1,8 +1,8 @@
 import json
 import re
 
-INPUT = "all.json"
-OUTPUT = "clean_courses.json"
+INPUT = r"c:\Users\shihy\Downloads\curriculum_maker\NCU-Course-Finder-DataFetcher-v2-master\data\dynamic\all.json"
+OUTPUT = r"c:\Users\shihy\Downloads\curriculum_maker\scheduler-app\data\clean_courses.json"
 
 # A-Z 對應中央的節次代號（你可自行調整）
 # 假設 A=10, B=11 ... Z=35（可依中央實際節次表修正）

@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Centres and Institues",
+    "departments": [
+      "AI Alliance",
+      "Career Center",
+      "Core and Generals Education Courses",
+      "Division of Student Affairs-Center for Service Learning",
+      "General Education Center",
+      "International Ph.D. Program in Environmental Science and Technology(UST-EST)",
+      "Language Center",
+      "Master of Science Program in Remote Sensing Science and Technology",
+      "Military Training Office",
+      "Physical Education Office",
+      "Teaching Center"
+    ]
+  },
+  {
+    "name": "College of Earth Sciences",
+    "departments": [
+      "Department of Atmospheric Physics",
+      "Department of Geophysics",
+      "Department of Space Science and Engineering",
+      "Institute of Applied Geology",
+      "Institute of Hydrologocal and Oceanic Sciences",
+      "Interdisciplinary Program of Earth System Science",
+      "International Ph.D. Graduate Program for Earth System Science"
+    ]
+  },
+  {
+    "name": "College of Electrical Engineering and Computer Science",
+    "departments": [
+      "Department of Communication Engineering",
+      "Department of Computer Science and Elec. Engineering",
+      "Department of Electrical Engineering",
+      "Institute of Artificial Intelligence",
+      "Institute of Network Learning Technology",
+      "Interdisciplinary Program of Electrical Engineering and Computer Science"
+    ]
+  },
+  {
+    "name": "College of Engineering",
+    "departments": [
+      "College of Engineering",
+      "Department of  Chemical Engineering",
+      "Department of Civil Engineering",
+      "Department of Mechanical Engineering",
+      "Institute of Construction Management",
+      "Institute of Energy Engineering",
+      "Institute of Environmental Engineering",
+      "Institute of Materials Science and Engineering",
+      "Interdisciplinary Program of Engineering"
+    ]
+  },
+  {
+    "name": "College of Graduate College of Sustainability and Green Energy",
+    "departments": [
+      "Graduate College of Sustainability and Green Energy",
+      "Master Programs, Sustainability Leadership",
+      "Master Programs, Sustainability in Decarbonization",
+      "Master Programs, Sustainability in Green Energy"
+    ]
+  },
+  {
+    "name": "College of Hakka Studies",
+    "departments": [
+      "Department of Hakka Language and Social Sciences",
+      "Institute of Law and Government",
+      "Master Program in Hakka Language and Literature, Department of Hakka Language and Social Sciences",
+      "Master Program of Hakka Social and Policy Sciences",
+      "Ph.D. Program of Hakka Studies, Department of Hakka Language and Social Sciences",
+      "The Executive Master Program of Hakka Studies,Department of Hakka Language and Social Sciences"
+    ]
+  },
+  {
+    "name": "College of Health Sciences and Technology",
+    "departments": [
+      "Department of Biomedical Sciences and Engineering",
+      "Department of Life Sciences",
+      "Institute of Cognitive Neuroscience",
+      "Institute of Translational and Interdisciplinary Medicine",
+      "International Ph.D. Program in Interdisciplinary Neuroscience",
+      "Master Program in Biomedical Engineering, Department of Biomedical Sciences and Engineering",
+      "Master Program in Systems Biology and Bioinformatics, Department of Biomedical Sciences and Engineer"
+    ]
+  },
+  {
+    "name": "College of Liberal Arts",
+    "departments": [
+      "Center of Teacher-training Program",
+      "Department of Chinese Literature",
+      "Department of English",
+      "Department of French",
+      "Institute of  History",
+      "Institute of Art Studies",
+      "Institute of Learning and Instruction",
+      "Institute of Philosophy",
+      "Interdisciplinary Program of Liberal Arts",
+      "International Master’s Program in Inter-Asia Cultural Studies (University System of Taiwan)"
+    ]
+  },
+  {
+    "name": "College of Management",
+    "departments": [
+      "Department of Business Administration",
+      "Department of Economics",
+      "Department of Finance",
+      "Department of Information Management",
+      "Executive Master of Business Administration",
+      "Institute of Accounting",
+      "Institute of Human Resource Management",
+      "Institute of Industrial Economics",
+      "Institute of Industrial Management",
+      "International Master of Business Administration program",
+      "School of Management"
+    ]
+  },
+  {
+    "name": "College of Science",
+    "departments": [
+      "College of Science",
+      "Department of Chemistry",
+      "Department of Mathematics",
+      "Department of Optics and Photonics",
+      "Department of Physics",
+      "Institute of Astronomy",
+      "Institute of Statistics",
+      "Interdisciplinary Program of Science"
+    ]
+  }
+]
