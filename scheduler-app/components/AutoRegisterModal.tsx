@@ -175,16 +175,72 @@ export function AutoRegisterModal({ open, onOpenChange, courses }: AutoRegisterM
                             </div>
 
                             <div className="grid gap-5">
+                                <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                                    <h3 className="text-sm font-semibold text-slate-700 mb-3 flex items-center">
+                                        <span className="bg-blue-100 text-blue-700 p-1 rounded mr-2">🤖</span>
+                                        快速登入 (推薦)
+                                    </h3>
+                                    <button
+                                        onClick={async () => {
+                                            if (isProcessing) return;
+                                            try {
+                                                setIsProcessing(true); // Re-use isProcessing to block other actions
+
+                                                const res = await fetch('/api/auth-script', { method: 'POST' });
+                                                const data = await res.json();
+
+                                                if (data.error) {
+                                                    alert('自動登入失敗: ' + (data.details || data.error));
+                                                } else {
+                                                    if (data.JSESSIONID) setJsessionid(data.JSESSIONID);
+                                                    if (data.scriptSessionId) setScriptSessionId(data.scriptSessionId);
+                                                }
+                                            } catch (e) {
+                                                alert('連線錯誤');
+                                            } finally {
+                                                setIsProcessing(false);
+                                            }
+                                        }}
+                                        disabled={isProcessing}
+                                        className="w-full py-2.5 bg-white border-2 border-slate-800 text-slate-800 font-bold rounded-lg hover:bg-slate-800 hover:text-white transition-all flex items-center justify-center gap-2 shadow-sm"
+                                    >
+                                        {isProcessing ? (
+                                            <>
+                                                <Loader2 className="w-4 h-4 animate-spin" />
+                                                正在等待您在視窗中登入...
+                                            </>
+                                        ) : (
+                                            <>
+                                                <ExternalLink className="w-4 h-4" />
+                                                開啟登入視窗並自動取得 ID
+                                            </>
+                                        )}
+                                    </button>
+                                    <p className="text-xs text-slate-500 mt-2 text-center">
+                                        點擊後將開啟 Chrome 視窗，請手動登入學校系統並進入選課頁面。
+                                    </p>
+                                </div>
+
+                                <div className="relative">
+                                    <div className="absolute inset-0 flex items-center">
+                                        <span className="w-full border-t border-slate-200" />
+                                    </div>
+                                    <div className="relative flex justify-center text-xs uppercase">
+                                        <span className="bg-white px-2 text-slate-500">或是手動輸入</span>
+                                    </div>
+                                </div>
+
                                 <div className="space-y-2">
                                     <label htmlFor="scriptSessionId" className="text-sm font-medium text-slate-700">
                                         scriptSessionId
                                     </label>
                                     <input
                                         id="scriptSessionId"
-                                        className="w-full p-2.5 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                        className="w-full p-2.5 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all font-mono text-sm"
                                         placeholder="例如: 1B14E8DF56C9D06DA10BDB5061374E17"
                                         value={scriptSessionId}
                                         onChange={e => setScriptSessionId(e.target.value)}
+                                        disabled={isProcessing}
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -193,10 +249,11 @@ export function AutoRegisterModal({ open, onOpenChange, courses }: AutoRegisterM
                                     </label>
                                     <input
                                         id="jsessionid"
-                                        className="w-full p-2.5 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                        className="w-full p-2.5 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all font-mono text-sm"
                                         placeholder="例如: CAE3A5B375C9DA267831989A12EA8C37"
                                         value={jsessionid}
                                         onChange={e => setJsessionid(e.target.value)}
+                                        disabled={isProcessing}
                                     />
                                 </div>
                             </div>

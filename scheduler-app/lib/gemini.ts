@@ -55,12 +55,12 @@ export async function classifyStrategy(userPrompt: string): Promise<UserPreferen
         const json = JSON.parse(cleanText);
 
         return {
-            sweet: Number(json.sweet) || 5,
-            ai: Number(json.ai) || 5,
-            tech: Number(json.tech) || 5,
-            art: Number(json.art) || 5,
+            sweet: Number(json.sweet) || 6,
+            ai: Number(json.ai) || 2,
+            tech: Number(json.tech) || 2,
+            art: Number(json.art) || 8,
             money: Number(json.money) || 5,
-            diff: Number(json.diff) || 5
+            diff: Number(json.diff) || 1
         };
     } catch (error) {
         console.error("Gemini API error:", error);
