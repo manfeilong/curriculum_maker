@@ -6,7 +6,7 @@ import { generateSchedule } from '@/lib/scheduler';
 export async function POST(request: Request) {
     try {
         const body = await request.json();
-        const { mustTakeSerialNos, userPrompt, targetDepartment, targetCredits } = body;
+        const { mustTakeSerialNos, userPrompt, targetDepartment, targetCredits, majorRatio, userWeights } = body;
 
         if (!Array.isArray(mustTakeSerialNos)) {
             return NextResponse.json({ error: 'Invalid mustTakeSerialNos' }, { status: 400 });
@@ -16,14 +16,19 @@ export async function POST(request: Request) {
             .map(serial => getCourseBySerial(serial))
             .filter(c => c !== undefined);
 
-        // If no prompt, default to BALANCED
-        const strategy = userPrompt ? await classifyStrategy(userPrompt) : 'BALANCED';
+        // Preference Resolution: Manual Override > AI Classification > Default
+        let preferences = { sweet: 5, ai: 5, tech: 5, art: 5, money: 5, diff: 5 };
+        if (userWeights) {
+            preferences = userWeights;
+        } else if (userPrompt) {
+            preferences = await classifyStrategy(userPrompt);
+        }
 
-        const schedule = generateSchedule(mustTakeCourses, strategy, targetDepartment, targetCredits);
+        const schedule = generateSchedule(mustTakeCourses, preferences, targetDepartment, targetCredits, majorRatio);
 
         return NextResponse.json({
             schedule,
-            strategy,
+            preferences,
             credits: schedule.reduce((sum, c) => sum + c.credit, 0)
         });
 

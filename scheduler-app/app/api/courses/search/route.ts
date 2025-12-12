@@ -11,6 +11,9 @@ export async function GET(request: Request) {
         day: searchParams.get('day') ? parseInt(searchParams.get('day')!) : undefined,
         period: searchParams.get('period') ? parseInt(searchParams.get('period')!) : undefined,
         courseType: searchParams.get('courseType') || undefined,
+        minCredits: searchParams.get('minCredits') ? parseInt(searchParams.get('minCredits')!) : undefined,
+        maxCredits: searchParams.get('maxCredits') ? parseInt(searchParams.get('maxCredits')!) : undefined,
+        availableOnly: searchParams.get('availableOnly') === 'true',
     };
 
     // If no filters at all, return empty to avoid loading everything

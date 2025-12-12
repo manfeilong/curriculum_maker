@@ -1,5 +1,6 @@
 import { Course, getCourses } from './course-data';
-import { Strategy } from './gemini';
+import { UserPreferences } from './gemini';
+import { ELECTIVES_DATA, RecommendationInfo } from './recommendation-data';
 
 function hasConflict(course: Course, currentSchedule: Course[]): boolean {
     for (const existing of currentSchedule) {
@@ -14,84 +15,146 @@ function hasConflict(course: Course, currentSchedule: Course[]): boolean {
     return false;
 }
 
+function calculateScore(recCourse: RecommendationInfo, prefs: UserPreferences): number {
+    const raw = recCourse.scores;
+    let score = 0;
+    score += raw.grading_leniency * prefs.sweet;
+    score += raw.ai_related * prefs.ai;
+    score += raw.engineering_related * prefs.tech;
+    score += raw.art_literature_related * prefs.art;
+    score += raw.economics_related * prefs.money;
+    score += raw.difficulty * prefs.diff;
+    score += raw.homework_load * -0.3; // Fixed penalty for homework load
+    return score;
+}
+
+// Helper to normalize course codes (e.g., CC0129-* -> CC0129)
+function normalizeCode(code: string): string {
+    return code.replace('-*', '').replace('-A', '').replace('-B', '').replace('-C', '');
+}
+
 export function generateSchedule(
     mustTakeCourses: Course[],
-    strategy: Strategy,
+    prefs: UserPreferences,
     targetDepartment?: string,
-    targetCredits: number = 20
+    targetCredits: number = 20,
+    majorRatio: number = 0.5 // Default 50%
 ): Course[] {
+    // 1. Initialize Schedule & Credits
     let schedule = [...mustTakeCourses];
     let currentCredits = schedule.reduce((sum, c) => sum + c.credit, 0);
 
     const allCourses = getCourses();
-
-    // Filter out courses already in schedule
     const existingIds = new Set(schedule.map(c => c.serialNo));
 
-    // Filter candidates based on target department and strategy
-    let candidates = allCourses.filter(c => {
-        if (existingIds.has(c.serialNo)) return false;
+    // Calculate Credit Buckets
+    // Major credits needed = (Total Target * Ratio) - (Already taken Major credits)
+    // But simplified: We just try to fill up to Target * Ratio with Major electives first.
+    const targetMajorCredits = Math.round(targetCredits * majorRatio);
 
-        // Always include target department courses
-        if (targetDepartment && c.department === targetDepartment) return true;
+    // ==========================================
+    // Phase 1: Fill Major Electives
+    // ==========================================
+    if (targetDepartment) {
+        // Is this a department we have detailed scores for? (Currently only CS/EE related in our fake DB)
+        // In our recommendation-data.ts, we only have CE/CC/GS. 
+        // If targetDepartment is NOT "Department of Computer Science...", we probably have NO scores for its majors.
+        // So we need a fallback: "Randomly select from available major courses"
 
-        // Include General/Language courses for DIVERSE or BALANCED
-        const isGeneral = c.department === 'Core and Generals Education Courses' || c.department === 'Language Center';
-        if (isGeneral && (strategy === 'DIVERSE' || strategy === 'BALANCED')) return true;
+        // Filter all courses for this department
+        let majorCandidates = allCourses.filter(c =>
+            c.department === targetDepartment &&
+            !existingIds.has(c.serialNo) &&
+            c.courseType !== 'REQUIRED' // Assuming we are filling electives here. 
+            // Note: If user wants REQUIRED, they can't really "choose", they are usually auto-assigned or must-take.
+            // But if there are multiple sections, they might be here.
+        );
 
-        // If no target department, include everything (fallback)
-        if (!targetDepartment) return true;
+        // Check if we have scores for ANY of these candidates
+        // We do this by checking if they exist in ELECTIVES_DATA (by fuzzy matching classNo)
+        // Since we didn't map "Department Name" to "ACRONYM" (like CE), we check loosely.
+        const scoredCodes = new Set(ELECTIVES_DATA.map(r => normalizeCode(r.code)));
 
-        return false;
-    });
+        const scoredMajorCandidates: { course: Course, score: number }[] = [];
+        const unscoredMajorCandidates: Course[] = [];
 
-    // Sort candidates based on strategy
-    candidates.sort((a, b) => {
-        const isTargetDeptA = targetDepartment ? a.department === targetDepartment : false;
-        const isTargetDeptB = targetDepartment ? b.department === targetDepartment : false;
+        majorCandidates.forEach(c => {
+            const classCodeBase = normalizeCode(c.classNo);
+            // Check if we have a scored record
+            // We need to find the exact record to pass to calculateScore
+            const recInfo = ELECTIVES_DATA.find(r => normalizeCode(r.code) === classCodeBase);
 
-        const isRequiredA = a.courseType === 'REQUIRED';
-        const isRequiredB = b.courseType === 'REQUIRED';
+            if (recInfo) {
+                const score = calculateScore(recInfo, prefs);
+                scoredMajorCandidates.push({ course: c, score });
+            } else {
+                unscoredMajorCandidates.push(c);
+            }
+        });
 
-        const isGeneralA = a.department === 'Core and Generals Education Courses' || a.department === 'Language Center';
-        const isGeneralB = b.department === 'Core and Generals Education Courses' || b.department === 'Language Center';
-
-        let scoreA = 0;
-        let scoreB = 0;
-
-        // Base score: Target Dept > General > Others
-        if (isTargetDeptA) scoreA += 50;
-        if (isTargetDeptB) scoreB += 50;
-
-        if (strategy === 'CHALLENGING') {
-            // Prioritize Required courses in Target Dept
-            if (isRequiredA) scoreA += 20;
-            if (isRequiredB) scoreB += 20;
-        } else if (strategy === 'DIVERSE') {
-            // Prioritize General courses
-            if (isGeneralA) scoreA += 20;
-            if (isGeneralB) scoreB += 20;
-        } else {
-            // Balanced: Mix of Required and General
-            if (isRequiredA) scoreA += 10;
-            if (isRequiredB) scoreB += 10;
-            if (isGeneralA) scoreA += 10;
-            if (isGeneralB) scoreB += 10;
+        // Strategy: Use Scored first, then Unscored (Randomized)
+        scoredMajorCandidates.sort((a, b) => b.score - a.score); // DESC
+        // Shuffle unscored
+        for (let i = unscoredMajorCandidates.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [unscoredMajorCandidates[i], unscoredMajorCandidates[j]] = [unscoredMajorCandidates[j], unscoredMajorCandidates[i]];
         }
 
-        // Randomness for variety
-        scoreA += Math.random() * 5;
-        scoreB += Math.random() * 5;
+        // Merge candidates
+        const finalMajorCandidates = [
+            ...scoredMajorCandidates.map(x => x.course),
+            ...unscoredMajorCandidates
+        ];
 
-        return scoreB - scoreA;
-    });
+        // Fill Major Credits
+        for (const course of finalMajorCandidates) {
+            // Check major credit cap
+            const currentMajorCredits = schedule.filter(c => c.department === targetDepartment).reduce((sum, c) => sum + c.credit, 0);
+            if (currentMajorCredits >= targetMajorCredits) break; // Reached Major Limit
 
-    for (const course of candidates) {
+            // Check total credit cap
+            if (currentCredits + course.credit > targetCredits + 3) continue;
+
+            if (schedule.some(c => c.serialNo === course.serialNo)) continue;
+            if (!hasConflict(course, schedule)) {
+                schedule.push(course);
+                currentCredits += course.credit;
+                existingIds.add(course.serialNo);
+            }
+        }
+    }
+
+    // ==========================================
+    // Phase 2: Fill General Electives (CC / GS)
+    // ==========================================
+    // These are fully scored in ELECTIVES_DATA.
+    let generalCandidates: { course: Course; score: number }[] = [];
+
+    // Get all CC/GS courses from real DB
+    // Filter by codes in ELECTIVES_DATA
+    const ccGsRecs = ELECTIVES_DATA.filter(r => r.code.startsWith('CC') || r.code.startsWith('GS'));
+
+    for (const rec of ccGsRecs) {
+        const normCode = normalizeCode(rec.code);
+        const matches = allCourses.filter(c => c.classNo.startsWith(normCode) && !existingIds.has(c.serialNo));
+        const score = calculateScore(rec, prefs);
+
+        matches.forEach(m => generalCandidates.push({ course: m, score }));
+    }
+
+    // Sort by Score
+    generalCandidates.sort((a, b) => b.score - a.score);
+
+    // Fill remaining credits
+    for (const candidate of generalCandidates) {
         if (currentCredits >= targetCredits) break;
 
-        // Don't exceed target credits too much (allow +3 buffer)
+        const { course } = candidate;
+
+        // Strict Cap for Total Credits (allow small buffer)
         if (currentCredits + course.credit > targetCredits + 3) continue;
 
+        if (schedule.some(c => c.serialNo === course.serialNo)) continue;
         if (!hasConflict(course, schedule)) {
             schedule.push(course);
             currentCredits += course.credit;

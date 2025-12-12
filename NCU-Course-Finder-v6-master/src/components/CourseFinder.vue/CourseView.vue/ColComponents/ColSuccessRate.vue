@@ -1,0 +1,34 @@
+<template>
+  <div class="ColSuccessRate flex-centered">
+    <div
+      class="progress position-relative w-100"
+      style="height: 30px; background-color: #ddd;"
+    >
+      <div
+        class="progress-bar"
+        style="background-color: #00ff00;"
+        :style="{ 'width': `${clamp(course.successRate, 0, 100)}%` }"
+      />
+      <div
+        class="position-absolute w-100 h-100 fs-6 text-nowrap flex-centered"
+      >
+        {{ formatNumber(course.remainCnt) }} / {{ formatNumber(course.waitCnt) }}
+        ({{ formatNumber(course.successRate, 1) }}%)
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { clamp, formatNumber } from '@/helpers';
+
+export default {
+  inject: ['course'],
+  setup() {
+    return {
+      clamp,
+      formatNumber,
+    };
+  },
+};
+</script>

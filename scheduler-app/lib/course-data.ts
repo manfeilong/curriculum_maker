@@ -50,11 +50,14 @@ export interface SearchFilters {
   day?: number;
   period?: number;
   courseType?: string;
+  minCredits?: number;
+  maxCredits?: number;
+  availableOnly?: boolean;
 }
 
 export function searchCourses(filters: SearchFilters): Course[] {
   const courses = getCourses();
-  const { query, college, department, day, period, courseType } = filters;
+  const { query, college, department, day, period, courseType, minCredits, maxCredits, availableOnly } = filters;
   const lowerQuery = query?.toLowerCase() || '';
 
   return courses.filter(c => {
@@ -82,6 +85,17 @@ export function searchCourses(filters: SearchFilters): Course[] {
 
     // Course Type
     if (courseType && c.courseType !== courseType) return false;
+
+    // Credits
+    if (minCredits !== undefined && c.credit < minCredits) return false;
+    if (maxCredits !== undefined && c.credit > maxCredits) return false;
+
+    // Available Only (Hide Full)
+    // Assuming limitCnt 0 means unlimited or special case, but typically if limit > 0 check admit < limit.
+    // If limitCnt is 0, we assume it's not full.
+    if (availableOnly) {
+      if (c.limitCnt > 0 && c.admitCnt >= c.limitCnt) return false;
+    }
 
     return true;
   }).slice(0, 100); // Limit results for performance

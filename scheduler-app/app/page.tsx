@@ -8,6 +8,7 @@ import { AutoRegisterModal } from '@/components/AutoRegisterModal';
 import { Course, SearchFilters } from '@/lib/course-data';
 import { Sparkles, Calendar, BookOpen } from 'lucide-react';
 import structure from '@/data/structure.json';
+import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';
 
 export default function Home() {
   // State
@@ -22,6 +23,14 @@ export default function Home() {
   const [targetDept, setTargetDept] = useState('');
   const [targetCredits, setTargetCredits] = useState(20);
   const [aiLoading, setAiLoading] = useState(false);
+
+  // Advanced Options
+  const [majorRatio, setMajorRatio] = useState(50); // 0-100%
+  const [showAdvanced, setShowAdvanced] = useState(false);
+  const [manualWeights, setManualWeights] = useState({
+    sweet: 5, ai: 5, tech: 5, art: 5, money: 5, diff: 5
+  });
+  const [useManualWeights, setUseManualWeights] = useState(false);
 
   // Auto Register Modal
   const [isAutoRegisterOpen, setIsAutoRegisterOpen] = useState(false);
@@ -38,6 +47,9 @@ export default function Home() {
         if (filters.day) params.set('day', filters.day.toString());
         if (filters.period) params.set('period', filters.period.toString());
         if (filters.courseType) params.set('courseType', filters.courseType);
+        if (filters.minCredits) params.set('minCredits', filters.minCredits.toString());
+        if (filters.maxCredits) params.set('maxCredits', filters.maxCredits.toString());
+        if (filters.availableOnly) params.set('availableOnly', 'true');
 
         const res = await fetch(`/api/courses/search?${params.toString()}`);
         const data = await res.json();
@@ -71,7 +83,9 @@ export default function Home() {
           mustTakeSerialNos: schedule.map(c => c.serialNo),
           userPrompt: aiPrompt,
           targetDepartment: targetDept,
-          targetCredits: targetCredits
+          targetCredits: targetCredits,
+          majorRatio: majorRatio / 100, // Convert to 0.0-1.0
+          userWeights: useManualWeights ? manualWeights : undefined
         })
       });
       const data = await res.json();
@@ -91,6 +105,10 @@ export default function Home() {
 
   // Flatten departments for dropdown
   const allDepartments = structure.flatMap(c => c.departments).sort();
+
+  const updateWeight = (key: keyof typeof manualWeights, val: number) => {
+    setManualWeights(prev => ({ ...prev, [key]: val }));
+  };
 
   return (
     <main className="h-screen flex flex-col bg-gray-50 overflow-hidden">
@@ -121,95 +139,209 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Content */}
-      <div className="flex-1 flex overflow-hidden">
-        {/* Left Panel: Search & Filters */}
-        <aside className="w-[400px] flex flex-col border-r bg-white">
-          <div className="p-4 border-b bg-gray-50">
-            <h2 className="text-sm font-bold text-gray-700 uppercase tracking-wide mb-3">尋找課程</h2>
-            <CourseFilters onFilterChange={setFilters} />
-          </div>
-          <CourseResults
-            results={searchResults}
-            selectedCourses={schedule}
-            onSelect={handleAddCourse}
-            onRemove={handleRemoveCourse}
-            loading={loading}
-          />
-        </aside>
-
-        {/* Right Panel: Schedule */}
-        <section className="flex-1 flex flex-col overflow-hidden bg-gray-50/50">
-          <div className="p-4 flex-1 overflow-auto">
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 min-h-full">
-              <div className="flex items-center gap-2 mb-6">
-                <Calendar className="text-gray-400" />
-                <h2 className="text-lg font-semibold text-gray-800">每週課表</h2>
+      {/* Resizable Content */}
+      <PanelGroup direction="horizontal" className="flex-1 overflow-hidden">
+        {/* Sidebar Panel */}
+        <Panel defaultSize={30} minSize={20} maxSize={50}>
+          <PanelGroup direction="vertical">
+            {/* Filters Panel */}
+            <Panel defaultSize={40} minSize={20}>
+              <div className="h-full flex flex-col border-r bg-white overflow-hidden">
+                <div className="p-4 border-b bg-gray-50 shrink-0">
+                  <h2 className="text-sm font-bold text-gray-700 uppercase tracking-wide mb-3">尋找課程</h2>
+                  <CourseFilters onFilterChange={setFilters} />
+                </div>
               </div>
-              <ScheduleCalendar schedule={schedule} onRemoveCourse={handleRemoveCourse} />
+            </Panel>
+
+            <PanelResizeHandle className="h-2 bg-gray-100 border-y border-gray-200 hover:bg-blue-100 transition-colors cursor-row-resize flex justify-center items-center">
+              <div className="w-8 h-1 rounded-full bg-gray-300" />
+            </PanelResizeHandle>
+
+            {/* Results Panel */}
+            <Panel minSize={20}>
+              <div className="h-full flex flex-col border-r bg-white overflow-hidden">
+                <CourseResults
+                  results={searchResults}
+                  selectedCourses={schedule}
+                  onSelect={handleAddCourse}
+                  onRemove={handleRemoveCourse}
+                  loading={loading}
+                />
+              </div>
+            </Panel>
+          </PanelGroup>
+        </Panel>
+
+        <PanelResizeHandle className="w-2 bg-gray-100 border-x border-gray-200 hover:bg-blue-100 transition-colors cursor-col-resize flex justify-center items-center">
+          <div className="h-8 w-1 rounded-full bg-gray-300" />
+        </PanelResizeHandle>
+
+        {/* Schedule Panel */}
+        <Panel>
+          <section className="h-full flex flex-col overflow-hidden bg-gray-50/50">
+            <div className="p-4 flex-1 overflow-auto">
+              <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 min-h-full">
+                <div className="flex items-center gap-2 mb-6">
+                  <Calendar className="text-gray-400" />
+                  <h2 className="text-lg font-semibold text-gray-800">每週課表</h2>
+                </div>
+                <ScheduleCalendar schedule={schedule} onRemoveCourse={handleRemoveCourse} />
+              </div>
             </div>
-          </div>
-        </section>
-      </div>
+          </section>
+        </Panel>
+      </PanelGroup>
 
       {/* AI Modal */}
       {isAiModalOpen && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl shadow-xl max-w-md w-full p-6 space-y-4">
+          <div className="bg-white rounded-xl shadow-xl max-w-lg w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto">
             <h3 className="text-lg font-bold text-gray-900 flex items-center gap-2">
               <Sparkles className="text-purple-600" />
               AI 填課助手
             </h3>
 
-            <div>
-              <label className="block text-base font-bold text-gray-900 mb-1.5">目標系所</label>
-              <select
-                className="w-full p-3 border-2 border-gray-200 rounded-lg text-lg text-gray-900 font-medium focus:border-purple-500 focus:ring-4 focus:ring-purple-50 transition-all"
-                value={targetDept}
-                onChange={(e) => setTargetDept(e.target.value)}
-              >
-                <option value="">選擇系所...</option>
-                {allDepartments.map(d => (
-                  <option key={d} value={d}>{d}</option>
-                ))}
-              </select>
+            <div className="space-y-4">
+              {/* Department */}
+              <div>
+                <label className="block text-sm font-bold text-gray-700 mb-1">目標系所</label>
+                <select
+                  className="w-full p-2 border border-gray-300 rounded-lg text-sm"
+                  value={targetDept}
+                  onChange={(e) => setTargetDept(e.target.value)}
+                >
+                  <option value="">選擇系所...</option>
+                  {allDepartments.map(d => (
+                    <option key={d} value={d}>{d}</option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Credits & Ratio */}
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-bold text-gray-700 mb-1">目標總學分</label>
+                  <input
+                    type="number"
+                    className="w-full p-2 border border-gray-300 rounded-lg text-sm"
+                    value={targetCredits}
+                    onChange={(e) => setTargetCredits(parseInt(e.target.value))}
+                    min={1}
+                    max={30}
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-gray-700 mb-1">本系選修比例: {majorRatio}%</label>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    step="10"
+                    className="w-full accent-purple-600"
+                    value={majorRatio}
+                    onChange={(e) => setMajorRatio(parseInt(e.target.value))}
+                  />
+                </div>
+              </div>
+
+              {/* Prompt */}
+              <div>
+                <label className="block text-sm font-bold text-gray-700 mb-1">學期期望 (Vibe)</label>
+                <textarea
+                  className="w-full p-2 border border-gray-300 rounded-lg text-sm min-h-[80px]"
+                  placeholder="例如：我想多修一點系上必修，但也想修一些有趣的通識..."
+                  value={aiPrompt}
+                  onChange={(e) => setAiPrompt(e.target.value)}
+                  disabled={useManualWeights}
+                />
+              </div>
+
+              {/* Advanced Toggle */}
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setShowAdvanced(!showAdvanced)}
+                  className="text-sm text-purple-600 font-medium hover:underline flex items-center gap-1"
+                >
+                  {showAdvanced ? '收起進階選項' : '顯示進階選項 (權重調整)'}
+                </button>
+              </div>
+
+              {/* Advanced Options */}
+              {/* Advanced Options */}
+              {showAdvanced && (
+                <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 space-y-3 animate-in fade-in slide-in-from-top-2">
+                  <div className="flex items-center gap-2 mb-2">
+                    <input
+                      type="checkbox"
+                      id="useManual"
+                      checked={useManualWeights}
+                      onChange={(e) => setUseManualWeights(e.target.checked)}
+                      className="rounded text-purple-600 focus:ring-purple-500"
+                    />
+                    <label htmlFor="useManual" className="text-sm font-bold text-gray-700 cursor-pointer">
+                      手動設定權重 (忽略文字期望)
+                    </label>
+                  </div>
+
+                  <div className={`grid grid-cols-2 gap-x-4 gap-y-2 ${!useManualWeights ? 'opacity-50 pointer-events-none' : ''}`}>
+                    {[
+                      { key: 'sweet', label: '甜度 (Sweetness)' },
+                      { key: 'ai', label: 'AI 人工智慧' },
+                      { key: 'tech', label: '工程/硬體' },
+                      { key: 'art', label: '文藝/人文' },
+                      { key: 'money', label: '商業/經濟' },
+                      { key: 'diff', label: '硬課偏好 (Difficulty)' }
+                    ].map(({ key, label }) => (
+                      <div key={key}>
+                        <label className="flex justify-between text-xs font-medium text-gray-600 mb-1">
+                          <span>{label}</span>
+                          <span>{manualWeights[key as keyof typeof manualWeights]}</span>
+                        </label>
+                        <input
+                          type="range"
+                          min="0"
+                          max="10"
+                          step="1"
+                          className="w-full accent-indigo-500 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                          value={manualWeights[key as keyof typeof manualWeights]}
+                          onChange={(e) => updateWeight(key as any, parseInt(e.target.value))}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
             </div>
 
-            <div>
-              <label className="block text-base font-bold text-gray-900 mb-1.5">目標總學分</label>
-              <input
-                type="number"
-                className="w-full p-3 border-2 border-gray-200 rounded-lg text-lg text-gray-900 font-medium focus:border-purple-500 focus:ring-4 focus:ring-purple-50 transition-all"
-                value={targetCredits}
-                onChange={(e) => setTargetCredits(parseInt(e.target.value))}
-                min={1}
-                max={30}
-              />
-            </div>
-
-            <div>
-              <label className="block text-base font-bold text-gray-900 mb-1.5">學期期望 (Vibe)</label>
-              <textarea
-                className="w-full p-3 border-2 border-gray-200 rounded-lg text-base text-gray-900 font-medium focus:border-purple-500 focus:ring-4 focus:ring-purple-50 transition-all min-h-[100px]"
-                placeholder="例如：我想多修一點系上必修，但也想修一些有趣的通識..."
-                value={aiPrompt}
-                onChange={(e) => setAiPrompt(e.target.value)}
-              />
-            </div>
-
-            <div className="flex justify-end gap-2 pt-2">
+            <div className="flex justify-end gap-2 pt-2 border-t mt-4">
               <button
                 onClick={() => setIsAiModalOpen(false)}
-                className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+                className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg text-sm"
               >
                 取消
               </button>
               <button
                 onClick={handleAiGenerate}
                 disabled={aiLoading}
-                className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:opacity-50"
+                className={`px-4 py-2 rounded-lg text-white text-sm font-medium transition-all ${aiLoading
+                    ? 'bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient-x cursor-wait'
+                    : 'bg-purple-600 hover:bg-purple-700'
+                  }`}
               >
-                {aiLoading ? '生成中...' : '開始填課'}
+                {aiLoading ? (
+                  <div className="flex items-center gap-2">
+                    <svg className="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <span>AI 思考中...</span>
+                  </div>
+                ) : (
+                  '開始填課'
+                )}
               </button>
             </div>
           </div>

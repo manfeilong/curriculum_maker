@@ -7,6 +7,19 @@ interface CourseFiltersProps {
     onFilterChange: (filters: any) => void;
 }
 
+const COLLEGE_MAP: Record<string, string> = {
+    "Centres and Institues": "中心/學程",
+    "College of Earth Sciences": "地科學院",
+    "College of Electrical Engineering and Computer Science": "電資學院",
+    "College of Engineering": "工學院",
+    "College of Graduate College of Sustainability and Green Energy": "永續與綠能學院",
+    "College of Hakka Studies": "客家學院",
+    "College of Health Sciences and Technology": "生醫理工學院",
+    "College of Liberal Arts": "文學院",
+    "College of Management": "管理學院",
+    "College of Science": "理學院"
+};
+
 export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
     const [query, setQuery] = useState('');
     const [selectedCollege, setSelectedCollege] = useState('');
@@ -14,6 +27,9 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
     const [selectedDay, setSelectedDay] = useState('');
     const [selectedPeriod, setSelectedPeriod] = useState('');
     const [courseType, setCourseType] = useState('');
+    const [minCredits, setMinCredits] = useState('');
+    const [maxCredits, setMaxCredits] = useState('');
+    const [availableOnly, setAvailableOnly] = useState(false);
 
     // Reset department when college changes
     useEffect(() => {
@@ -29,11 +45,14 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
                 department: selectedDept,
                 day: selectedDay,
                 period: selectedPeriod,
-                courseType
+                courseType,
+                minCredits: minCredits ? Number(minCredits) : undefined,
+                maxCredits: maxCredits ? Number(maxCredits) : undefined,
+                availableOnly
             });
         }, 300);
         return () => clearTimeout(timer);
-    }, [query, selectedCollege, selectedDept, selectedDay, selectedPeriod, courseType, onFilterChange]);
+    }, [query, selectedCollege, selectedDept, selectedDay, selectedPeriod, courseType, minCredits, maxCredits, availableOnly, onFilterChange]);
 
     const departments = structure.find(c => c.name === selectedCollege)?.departments || [];
 
@@ -61,7 +80,7 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
                     >
                         <option value="">所有學院</option>
                         {structure.map(c => (
-                            <option key={c.name} value={c.name}>{c.name}</option>
+                            <option key={c.name} value={c.name}>{COLLEGE_MAP[c.name] || c.name}</option>
                         ))}
                     </select>
                 </div>
@@ -110,6 +129,43 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
                             <option key={p} value={p}>{p}</option>
                         ))}
                     </select>
+                </div>
+            </div>
+
+            {/* Credits & Availability */}
+            <div className="grid grid-cols-2 gap-3">
+                <div>
+                    <label className="block text-sm font-bold text-gray-900 mb-1.5">學分範圍</label>
+                    <div className="flex items-center gap-2">
+                        <input
+                            type="number"
+                            min="0"
+                            className="w-full p-2.5 text-base border-2 border-gray-200 rounded-lg text-gray-900 font-medium focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
+                            placeholder="Min"
+                            value={minCredits}
+                            onChange={(e) => setMinCredits(e.target.value)}
+                        />
+                        <span className="text-gray-400">-</span>
+                        <input
+                            type="number"
+                            min="0"
+                            className="w-full p-2.5 text-base border-2 border-gray-200 rounded-lg text-gray-900 font-medium focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
+                            placeholder="Max"
+                            value={maxCredits}
+                            onChange={(e) => setMaxCredits(e.target.value)}
+                        />
+                    </div>
+                </div>
+                <div className="flex items-end pb-3">
+                    <label className="flex items-center gap-2 cursor-pointer select-none">
+                        <input
+                            type="checkbox"
+                            checked={availableOnly}
+                            onChange={(e) => setAvailableOnly(e.target.checked)}
+                            className="w-5 h-5 text-blue-600 border-2 border-gray-300 rounded focus:ring-blue-500"
+                        />
+                        <span className="text-sm font-bold text-gray-900">僅顯示有餘額</span>
+                    </label>
                 </div>
             </div>
 

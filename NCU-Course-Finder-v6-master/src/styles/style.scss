@@ -1,0 +1,18 @@
+fieldset[disabled] * {
+  cursor: not-allowed;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (hover: none) {
+  abbr {
+    user-select: none;
+  }
+}
