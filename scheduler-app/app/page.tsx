@@ -6,7 +6,7 @@ import CourseResults from '@/components/CourseResults';
 import ScheduleCalendar from '@/components/ScheduleCalendar';
 import { AutoRegisterModal } from '@/components/AutoRegisterModal';
 import { Course, SearchFilters } from '@/lib/course-data';
-import { Sparkles, Calendar, BookOpen } from 'lucide-react';
+import { Sparkles, Calendar, BookOpen, Trash2 } from 'lucide-react';
 import structure from '@/data/structure.json';
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';
 
@@ -71,6 +71,12 @@ export default function Home() {
 
   const handleRemoveCourse = (serialNo: number) => {
     setSchedule(prev => prev.filter(c => c.serialNo !== serialNo));
+  };
+
+  const handleClearSchedule = () => {
+    if (confirm('確定要清空所有課程嗎？')) {
+      setSchedule([]);
+    }
   };
 
   const handleAiGenerate = async () => {
@@ -148,7 +154,7 @@ export default function Home() {
             <Panel defaultSize={40} minSize={20}>
               <div className="h-full flex flex-col border-r bg-white overflow-hidden">
                 <div className="p-4 border-b bg-gray-50 shrink-0">
-                  <h2 className="text-sm font-bold text-gray-700 uppercase tracking-wide mb-3">尋找課程</h2>
+                  <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wide mb-3">尋找課程</h2>
                   <CourseFilters onFilterChange={setFilters} />
                 </div>
               </div>
@@ -185,6 +191,16 @@ export default function Home() {
                 <div className="flex items-center gap-2 mb-6">
                   <Calendar className="text-gray-400" />
                   <h2 className="text-lg font-semibold text-gray-800">每週課表</h2>
+                  {schedule.length > 0 && (
+                    <button
+                      onClick={handleClearSchedule}
+                      className="ml-auto text-xs flex items-center gap-1 text-gray-400 hover:text-red-600 hover:bg-red-50 px-2 py-1 rounded transition-colors"
+                      title="清空所有課程"
+                    >
+                      <Trash2 size={14} />
+                      清空
+                    </button>
+                  )}
                 </div>
                 <ScheduleCalendar schedule={schedule} onRemoveCourse={handleRemoveCourse} />
               </div>
@@ -205,9 +221,9 @@ export default function Home() {
             <div className="space-y-4">
               {/* Department */}
               <div>
-                <label className="block text-sm font-bold text-gray-700 mb-1">目標系所</label>
+                <label className="block text-sm font-bold text-gray-900 mb-1">目標系所</label>
                 <select
-                  className="w-full p-2 border border-gray-300 rounded-lg text-sm"
+                  className="w-full p-2 border border-gray-400 rounded-lg text-sm text-black font-medium"
                   value={targetDept}
                   onChange={(e) => setTargetDept(e.target.value)}
                 >
@@ -221,10 +237,10 @@ export default function Home() {
               {/* Credits & Ratio */}
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-1">目標總學分</label>
+                  <label className="block text-sm font-bold text-gray-900 mb-1">目標總學分</label>
                   <input
                     type="number"
-                    className="w-full p-2 border border-gray-300 rounded-lg text-sm"
+                    className="w-full p-2 border border-gray-400 rounded-lg text-sm text-black font-medium"
                     value={targetCredits}
                     onChange={(e) => setTargetCredits(parseInt(e.target.value))}
                     min={1}
@@ -232,7 +248,7 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-1">本系選修比例: {majorRatio}%</label>
+                  <label className="block text-sm font-bold text-gray-900 mb-1">本系選修比例: {majorRatio}%</label>
                   <input
                     type="range"
                     min="0"
@@ -247,9 +263,9 @@ export default function Home() {
 
               {/* Prompt */}
               <div>
-                <label className="block text-sm font-bold text-gray-700 mb-1">學期期望 (Vibe)</label>
+                <label className="block text-sm font-bold text-gray-900 mb-1">學期期望 (Vibe)</label>
                 <textarea
-                  className="w-full p-2 border border-gray-300 rounded-lg text-sm min-h-[80px]"
+                  className="w-full p-2 border border-gray-400 rounded-lg text-sm min-h-[80px] text-black font-medium placeholder:text-gray-500"
                   placeholder="例如：我想多修一點系上必修，但也想修一些有趣的通識..."
                   value={aiPrompt}
                   onChange={(e) => setAiPrompt(e.target.value)}
@@ -280,7 +296,7 @@ export default function Home() {
                       onChange={(e) => setUseManualWeights(e.target.checked)}
                       className="rounded text-purple-600 focus:ring-purple-500"
                     />
-                    <label htmlFor="useManual" className="text-sm font-bold text-gray-700 cursor-pointer">
+                    <label htmlFor="useManual" className="text-sm font-bold text-gray-900 cursor-pointer">
                       手動設定權重 (忽略文字期望)
                     </label>
                   </div>
@@ -295,7 +311,7 @@ export default function Home() {
                       { key: 'diff', label: '硬課偏好 (Difficulty)' }
                     ].map(({ key, label }) => (
                       <div key={key}>
-                        <label className="flex justify-between text-xs font-medium text-gray-600 mb-1">
+                        <label className="flex justify-between text-sm font-semibold text-gray-800 mb-1">
                           <span>{label}</span>
                           <span>{manualWeights[key as keyof typeof manualWeights]}</span>
                         </label>
@@ -319,7 +335,7 @@ export default function Home() {
             <div className="flex justify-end gap-2 pt-2 border-t mt-4">
               <button
                 onClick={() => setIsAiModalOpen(false)}
-                className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg text-sm"
+                className="px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-lg text-sm"
               >
                 取消
               </button>
@@ -327,8 +343,8 @@ export default function Home() {
                 onClick={handleAiGenerate}
                 disabled={aiLoading}
                 className={`px-4 py-2 rounded-lg text-white text-sm font-medium transition-all ${aiLoading
-                    ? 'bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient-x cursor-wait'
-                    : 'bg-purple-600 hover:bg-purple-700'
+                  ? 'bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient-x cursor-wait'
+                  : 'bg-purple-600 hover:bg-purple-700'
                   }`}
               >
                 {aiLoading ? (

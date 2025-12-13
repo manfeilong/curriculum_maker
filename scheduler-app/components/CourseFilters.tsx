@@ -63,7 +63,7 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
                 <label className="block text-sm font-bold text-gray-900 mb-1.5">搜尋課程</label>
                 <input
                     type="text"
-                    className="w-full p-2.5 text-base border-2 border-gray-200 rounded-lg text-gray-900 font-medium focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all placeholder:text-gray-400"
+                    className="w-full p-2.5 text-base border-2 border-gray-400 rounded-lg text-black font-bold focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all placeholder:text-gray-500"
                     placeholder="課程名稱, 教師, 代碼..."
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
@@ -74,7 +74,7 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
                 <div>
                     <label className="block text-sm font-bold text-gray-900 mb-1.5">學院</label>
                     <select
-                        className="w-full p-2.5 text-base border-2 border-gray-200 rounded-lg text-gray-900 font-medium focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
+                        className="w-full p-2.5 text-base border-2 border-gray-400 rounded-lg text-black font-bold focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
                         value={selectedCollege}
                         onChange={(e) => setSelectedCollege(e.target.value)}
                     >
@@ -87,7 +87,7 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
                 <div>
                     <label className="block text-sm font-bold text-gray-900 mb-1.5">系所</label>
                     <select
-                        className="w-full p-2.5 text-base border-2 border-gray-200 rounded-lg text-gray-900 font-medium focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all disabled:bg-gray-100 disabled:text-gray-400"
+                        className="w-full p-2.5 text-base border-2 border-gray-400 rounded-lg text-black font-bold focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all disabled:bg-gray-100 disabled:text-gray-400"
                         value={selectedDept}
                         onChange={(e) => setSelectedDept(e.target.value)}
                         disabled={!selectedCollege}
@@ -105,7 +105,7 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
                 <div>
                     <label className="block text-sm font-bold text-gray-900 mb-1.5">星期</label>
                     <select
-                        className="w-full p-2.5 text-base border-2 border-gray-200 rounded-lg text-gray-900 font-medium focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
+                        className="w-full p-2.5 text-base border-2 border-gray-400 rounded-lg text-black font-bold focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
                         value={selectedDay}
                         onChange={(e) => setSelectedDay(e.target.value)}
                     >
@@ -120,7 +120,7 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
                 <div>
                     <label className="block text-sm font-bold text-gray-900 mb-1.5">節次</label>
                     <select
-                        className="w-full p-2.5 text-base border-2 border-gray-200 rounded-lg text-gray-900 font-medium focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
+                        className="w-full p-2.5 text-base border-2 border-gray-400 rounded-lg text-black font-bold focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
                         value={selectedPeriod}
                         onChange={(e) => setSelectedPeriod(e.target.value)}
                     >
@@ -140,7 +140,7 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
                         <input
                             type="number"
                             min="0"
-                            className="w-full p-2.5 text-base border-2 border-gray-200 rounded-lg text-gray-900 font-medium focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
+                            className="w-full p-2.5 text-base border-2 border-gray-400 rounded-lg text-black font-bold focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
                             placeholder="Min"
                             value={minCredits}
                             onChange={(e) => setMinCredits(e.target.value)}
@@ -149,7 +149,7 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
                         <input
                             type="number"
                             min="0"
-                            className="w-full p-2.5 text-base border-2 border-gray-200 rounded-lg text-gray-900 font-medium focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
+                            className="w-full p-2.5 text-base border-2 border-gray-400 rounded-lg text-black font-bold focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all"
                             placeholder="Max"
                             value={maxCredits}
                             onChange={(e) => setMaxCredits(e.target.value)}
@@ -182,7 +182,7 @@ export default function CourseFilters({ onFilterChange }: CourseFiltersProps) {
                             onClick={() => setCourseType(courseType === type.value ? '' : type.value)}
                             className={`flex-1 py-2 text-sm font-bold rounded-lg border-2 transition-all ${courseType === type.value
                                 ? 'bg-blue-600 border-blue-600 text-white shadow-md'
-                                : 'bg-white border-gray-200 text-gray-600 hover:border-gray-300 hover:bg-gray-50'
+                                : 'bg-white border-gray-200 text-gray-800 hover:border-gray-300 hover:bg-gray-50'
                                 }`}
                         >
                             {type.label}
